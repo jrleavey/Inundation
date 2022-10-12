@@ -1,44 +1,71 @@
-using System.ComponentModel;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using static PickUp;
 
 public class PickUp : MonoBehaviour
 {
-    [SerializeField] Items[] itemSlot;
-    [SerializeField] public bool canPickup; //Get rid of serializeField if bool works correctly
-    Items.ItemType itemType;
-
-    void InteractWithPickUps()
+    public enum ItemLists
     {
-        //if Input key is pressed in playercontroller call this function
+        revolverAmmo,
+        shotgunAmmo,
+        SMGAmmo,
+        rifleAmmo,
+        medKit,
+        journal
+    }
+
+    [SerializeField] ItemProperty[] itemLists;
+    [SerializeField] int amount;
+    PlayerController playerController;
+    bool canPickup;
+    ItemLists itemlists;
+
+    private void Start()
+    {
+        playerController = FindObjectOfType<PlayerController>();
+    }
+
+    public void InteractWithPickUps()
+    {
+       if(canPickup)
         {
-            switch (itemType)
+            switch (itemlists)
             {
-                case Items.ItemType.revolverAmmo:
-                    //Add ammo to the player +amount
+                case ItemLists.revolverAmmo:
+                    // playerController.ammo+=amount;
                     break;
 
-                case Items.ItemType.shotgunAmmo:
-                    //Add ammo to the player
+                case ItemLists.shotgunAmmo:
+                    // playerController.ammo+=amount;
                     break;
 
-                case Items.ItemType.SMGammo:
-                    //Add ammo to the player
+                case ItemLists.SMGAmmo:
+                    // playerController.ammo+=amount;
                     break;
 
-                case Items.ItemType.rifleAmmo:
-                    //Add ammo to the player
+                case ItemLists.rifleAmmo:
+                    // playerController.ammo+=amount;
                     break;
 
-                case Items.ItemType.medKit:
-                    //Add health to the player
+                case ItemLists.medKit:
+                    // playerController.health+=amount;
                     break;
 
-                case Items.ItemType.journal:
-                    //
+                case ItemLists.journal:
+                    // Display journal function
                     break;
+                    default:
+                    Debug.Log("Nothing is activated"); break;
+
             }
         }
         //Destroy the game object or disable it
+    }
+    [System.Serializable]
+    public class ItemProperty
+    {
+        public ItemLists itemList;
     }
 
     void OnTriggerEnter(Collider col)
@@ -46,23 +73,6 @@ public class PickUp : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             canPickup = true;
-        }
-    }
-
-    [System.Serializable]
-    class Items
-    {
-        [SerializeField] ItemType itemType;
-        [SerializeField] int amount;
-
-        public enum ItemType
-        {
-            revolverAmmo,
-            shotgunAmmo,
-            SMGammo,
-            rifleAmmo,
-            medKit,
-            journal
         }
     }
 }

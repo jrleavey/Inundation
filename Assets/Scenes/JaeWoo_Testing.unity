@@ -259,10 +259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df8a56f4b5a50147957b82435d79369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSlot:
-  - itemType: 3
-    amount: 0
-  canPickup: 0
+  itemLists:
+  - itemList: 5
+  amount: 0
 --- !u!1 &1865848085
 GameObject:
   m_ObjectHideFlags: 0
