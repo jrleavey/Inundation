@@ -74,6 +74,17 @@
                 },
                 {
                     "name": "",
+                    "id": "919eeca8-10db-4e48-a8f8-df3eebf60f0c",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Stick Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6887d864-1e6f-4284-bffd-9f18ed89ae94",
                     "path": "<XInputController>/leftStick",
                     "interactions": "",
