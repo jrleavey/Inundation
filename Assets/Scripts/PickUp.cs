@@ -5,74 +5,57 @@ using static PickUp;
 
 public class PickUp : MonoBehaviour
 {
-    public enum ItemLists
-    {
-        revolverAmmo,
-        shotgunAmmo,
-        SMGAmmo,
-        rifleAmmo,
-        medKit,
-        journal
-    }
-
-    [SerializeField] ItemProperty[] itemLists;
-    [SerializeField] int amount;
-    PlayerController playerController;
-    bool canPickup;
-    ItemLists itemlists;
+    [SerializeField] int _itemID;
+    PlayerController _playerController;
 
     private void Start()
     {
-        playerController = FindObjectOfType<PlayerController>();
+        _playerController = FindObjectOfType<PlayerController>();
     }
 
-    public void InteractWithPickUps()
+    void ItemLogic(int _itemID)
     {
-       if(canPickup)
+        switch (_itemID)
         {
-            switch (itemlists)
-            {
-                case ItemLists.revolverAmmo:
-                    // playerController.ammo+=amount;
-                    break;
+            case 0:
+                _playerController.PickedUpItem(0);
+                break;
 
-                case ItemLists.shotgunAmmo:
-                    // playerController.ammo+=amount;
-                    break;
+            case 1:
+                _playerController.PickedUpItem(1);
 
-                case ItemLists.SMGAmmo:
-                    // playerController.ammo+=amount;
-                    break;
+                break;
 
-                case ItemLists.rifleAmmo:
-                    // playerController.ammo+=amount;
-                    break;
+            case 2:
+                _playerController.PickedUpItem(2);
 
-                case ItemLists.medKit:
-                    // playerController.health+=amount;
-                    break;
+                break;
 
-                case ItemLists.journal:
-                    // Display journal function
-                    break;
-                    default:
-                    Debug.Log("Nothing is activated"); break;
+            case 3:
+                _playerController.PickedUpItem(3);
 
-            }
+                break;
+
+            case 4:
+                _playerController.PickedUpItem(4);
+
+                break;
+
+            case 5:
+                _playerController.PickedUpItem(5);
+
+                break;
+            default:
+                Debug.Log("Nothing is activated"); break;
+
         }
-        //Destroy the game object or disable it
-    }
-    [System.Serializable]
-    public class ItemProperty
-    {
-        public ItemLists itemList;
     }
 
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {
-            canPickup = true;
+            ItemLogic(_itemID);
         }
     }
 }
