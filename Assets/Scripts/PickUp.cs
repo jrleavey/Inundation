@@ -1,7 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using static PickUp;
 
 public class PickUp : MonoBehaviour
 {
@@ -18,31 +15,31 @@ public class PickUp : MonoBehaviour
         switch (_itemID)
         {
             case 0:
-                _playerController.PickedUpItem(0);
+                //_playerController.PickedUpItem(0);
                 break;
 
             case 1:
-                _playerController.PickedUpItem(1);
+                //_playerController.PickedUpItem(1);
 
                 break;
 
             case 2:
-                _playerController.PickedUpItem(2);
+                //_playerController.PickedUpItem(2);
 
                 break;
 
             case 3:
-                _playerController.PickedUpItem(3);
+                //_playerController.PickedUpItem(3);
 
                 break;
 
             case 4:
-                _playerController.PickedUpItem(4);
+                //_playerController.PickedUpItem(4);
 
                 break;
 
             case 5:
-                _playerController.PickedUpItem(5);
+                //_playerController.PickedUpItem(5);
 
                 break;
             default:
