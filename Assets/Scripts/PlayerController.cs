@@ -4,18 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private enum ActiveWeapon
+    {
+        Handgun,
+        Shotgun,
+        SMG,
+        Rifle
+    }
+    [SerializeField]
+    private ActiveWeapon _ActiveWeapon;
+
     private PlayerControls _playerControls;
 
 
     private Vector3 playerVelocity;
 
-
     [SerializeField]
-    private int _weaponID;
-
     private int handgunAmmo;
+    [SerializeField]
     private int shotgunAmmo;
+    [SerializeField]
     private int smgAmmo;
+    [SerializeField]
     private int rifleAmmo;
 
     private int magazineCapacity = 6;
@@ -33,10 +43,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float nextFire = -1f;
     private float gunDamage = 1;
-
-
-
-
 
 
     [SerializeField]
@@ -99,21 +105,46 @@ public class PlayerController : MonoBehaviour
     }
     private void WeaponControls()
     {
-        switch (_weaponID)
+        switch (_ActiveWeapon)
         {
-            case 0: // Pistol
+            case ActiveWeapon.Handgun: // Pistol
                 PistolLogic();
                 break;
-            case 1: // Shotgun
+            case ActiveWeapon.Shotgun: // Shotgun
                 ShotgunLogic();
                 break;
-            case 2: // SMG
+            case ActiveWeapon.SMG: // SMG
                 SMGLogic();
                 break;
-            case 3: // Rifle
+            case ActiveWeapon.Rifle: // Rifle
                 RifleLogic();
                 break;
-
+        }
+    }
+    
+    public void PickedUpItem(int _itemID)
+    {
+        switch (_itemID)
+        {
+            case 0: // Handgun Bullets
+                handgunAmmo += 10;
+                Debug.Log("+10 Handgun Ammo");
+                break;
+            case 1: // Shotgun Bullets
+                shotgunAmmo += 5;
+                Debug.Log("+5 Shotgun Ammo");
+                break;
+            case 2: // SMG Bullets
+                smgAmmo += 50;
+                Debug.Log("+50 SMG Ammo");
+                break;
+            case 3: // Rifle Bullets
+                rifleAmmo += 4;
+                Debug.Log("+3 Rifle Ammo");
+                break;
+            case 4: // Health
+                Debug.Log("This is health");
+                break;
         }
     }
 
@@ -252,21 +283,21 @@ public class PlayerController : MonoBehaviour
 
         if (isAiming == true)
         {
-            switch (_weaponID)
+            switch (_ActiveWeapon)
             {
-                case 0: //Pistol
+                case ActiveWeapon.Handgun: //Pistol
                     //Ready Pistol
                     _Weapons[0].SetActive(true);
                     break;
-                case 1: //Shotgun
+                case ActiveWeapon.Shotgun: //Shotgun
                         //Ready Shotgun
                     _Weapons[1].SetActive(true);
                     break;
-                case 2: //SMG
+                case ActiveWeapon.SMG: //SMG
                         //Ready SMG
                     _Weapons[2].SetActive(true);
                     break;
-                case 3: //Rifle
+                case ActiveWeapon.Rifle: //Rifle
                         //Ready Rifle
                     _Weapons[3].SetActive(true);
                     break;
