@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject[] _Weapons;
 
-
+    
 
 
 
@@ -341,7 +341,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Menu_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        throw new System.NotImplementedException();
+        InventoryManager.Instance.GetComponent<InventoryManager>().ListItems();
     }
 
 }
