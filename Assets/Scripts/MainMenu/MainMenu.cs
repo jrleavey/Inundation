@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
@@ -9,5 +8,6 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+        Debug.Log("Quit button pressed");
     }
 }
