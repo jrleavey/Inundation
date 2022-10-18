@@ -26,22 +26,21 @@ public class MainMenuOption : MonoBehaviour
     }
     public void AdjustVolume(float value)
     {
-        volumeSliderNumber.text = (value+80).ToString();
+        volumeSliderNumber.text = (value + 80).ToString();
         audioMixer.SetFloat("volume", value);
     }
 
     public void AdjustBrightness(float value)
     {
-        
         brightnessSliderNumber.text = value.ToString();
 
-        if(value!=0)
+        if (value != 0)
         {
             exposure.keyValue.value = value;
         }
         else
         {
-            exposure.keyValue.value = 0.05f;
+            exposure.keyValue.value = .05f;
         }
     }
 }
