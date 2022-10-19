@@ -85,6 +85,16 @@ public class CoreAI : MonoBehaviour
         if (canSeePlayer == true)
         {
             _AIState = AIState.Hostile;
+            _navMeshAgent.speed = 3;
+        }
+
+        if (_IAmWaiting == false)
+        {
+            _anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            _anim.SetBool("isWalking", false);
         }
 
         if (_IAmWaiting == true)
@@ -104,7 +114,7 @@ public class CoreAI : MonoBehaviour
 
     private void Wander()
     {
-        if (_navMeshAgent != null && _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance && _IAmWaiting == false)
+        if (_navMeshAgent != null && _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance && _IAmWaiting == false && canSeePlayer == false)
         {
             _navMeshAgent.SetDestination(RandomNavMeshLocation());
             _IAmWaiting = true;
@@ -134,15 +144,6 @@ public class CoreAI : MonoBehaviour
                     canSeePlayer = false;
                 }
             }
-            else
-            {
-                canSeePlayer = false;
-                _AIState = AIState.Passive;
-            }
-        }
-        else if (canSeePlayer)
-        {
-            canSeePlayer = false;
         }
     }
     private IEnumerator CheckForPlayer()
@@ -161,7 +162,7 @@ public class CoreAI : MonoBehaviour
         int wait_time = Random.Range(3, 7);
         _navMeshAgent.speed = 0;
         yield return new WaitForSeconds(wait_time);
-        _navMeshAgent.speed = 1.5f;
+        _navMeshAgent.speed = 3f;
         print("I waited for " + wait_time + "sec");
         _IAmWaiting = false;
     }
@@ -181,9 +182,14 @@ public class CoreAI : MonoBehaviour
         _isChasingPlayer = true;
         _navMeshAgent.destination = _player.transform.position;
 
-        if (_navMeshAgent.remainingDistance < 1.5f)
+        if (_navMeshAgent.remainingDistance < 2f)
         {
-            _anim.SetTrigger("Attack");
+            _anim.SetBool("isAttacking", true);
+        }
+        else
+        {
+            _anim.SetBool("isAttacking", false);
+
         }
     }
     private void Damage()

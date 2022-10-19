@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private int magazineCapacity = 6;
     [SerializeField]
-    private int currentAmmo = 5;
+    private int currentAmmo = 6;
 
     private int _currentHealth;
 
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private float _rotateSpeed;
     private float _eyeRot;
     [SerializeField]
-    private float fireRate = .5f;
+    private float fireRate = 5f;
     [SerializeField]
     private float nextFire = -1f;
     private float gunDamage = 1;
@@ -49,8 +49,11 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private bool isAiming;
+    [SerializeField]
     private bool isMoving;
+    [SerializeField]
     private bool isReloading;
+    [SerializeField]
     private bool aButton;
 
 
@@ -60,6 +63,9 @@ public class PlayerController : MonoBehaviour
     private GameObject[] RaycastHolders;
     [SerializeField]
     private GameObject[] _Weapons;
+
+    [SerializeField]
+    private Animator _revolverAnim;
 
     
 
@@ -92,7 +98,6 @@ public class PlayerController : MonoBehaviour
         float updownspeed = -rightStick.y * _rotateSpeed * Time.deltaTime;
 
         transform.Rotate(0, turnspeed, 0);
-        //_playerEyes.transform.Rotate(updownspeed, 0, 0);
 
         _eyeRot += updownspeed;
 
@@ -152,8 +157,15 @@ public class PlayerController : MonoBehaviour
 
     private void PistolLogic()
     {
-        if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
+        
+        magazineCapacity = 6;
+
+        fireRate = 1.3f;
+        if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire && isReloading == false)
         {
+            
+            _revolverAnim.SetTrigger("Shoot");
+            StartCoroutine(FireAnimTimers());
             aButton = false;
             RaycastHit hit;
             nextFire = Time.time + fireRate;
@@ -163,8 +175,9 @@ public class PlayerController : MonoBehaviour
                 hit.collider.SendMessage("Damage", gunDamage);
                 Debug.DrawLine(RaycastHolders[0].transform.position, hit.point, Color.red, 1f);
                 Debug.Log("Fired Raycast");
+                currentAmmo--;
+
             }
-            currentAmmo--;
         }
     }
     private void ShotgunLogic()
@@ -256,6 +269,17 @@ public class PlayerController : MonoBehaviour
     {
         _currentHealth++;
     }
+    public void SwapToRevolver()
+    {
+
+    }
+    public void SwapToShotgun()
+    {
+        if (_ActiveWeapon == ActiveWeapon.Handgun)
+        {
+            handgunAmmo += currentAmmo;
+        }
+    }
 
 
 
@@ -322,6 +346,25 @@ public class PlayerController : MonoBehaviour
     private void RightStickClick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         isReloading = true;
+
+        switch (_ActiveWeapon)
+        {
+            case ActiveWeapon.Handgun: // Pistol
+                _revolverAnim.SetBool("isReloading", true);
+                StartCoroutine(ReloadTimers());
+
+                break;
+            case ActiveWeapon.Shotgun: // Shotgun
+
+                break;
+            case ActiveWeapon.SMG: // SMG
+
+                break;
+            case ActiveWeapon.Rifle: // Rifle
+
+                break;
+        }
+
         StartCoroutine(RStickFailsafeEnd());
     }
     private void Interact_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -355,4 +398,43 @@ public class PlayerController : MonoBehaviour
         InventoryManager.Instance.GetComponent<InventoryManager>().ListItems();
     }
 
+    private IEnumerator ReloadTimers()
+    {
+        switch (_ActiveWeapon)
+        {
+            case ActiveWeapon.Handgun: // Pistol
+                yield return new WaitForSeconds(2f);
+                _revolverAnim.SetBool("isReloading", false);
+                break;
+            case ActiveWeapon.Shotgun: // Shotgun
+ 
+                break;
+            case ActiveWeapon.SMG: // SMG
+
+                break;
+            case ActiveWeapon.Rifle: // Rifle
+  
+                break;
+        }
+    }
+    private IEnumerator FireAnimTimers()
+    {
+        switch (_ActiveWeapon)
+        {
+            case ActiveWeapon.Handgun: // Pistol
+                yield return new WaitForSeconds(1.2f);
+                _revolverAnim.ResetTrigger("Shoot");
+                break;
+            case ActiveWeapon.Shotgun: // Shotgun
+
+                break;
+            case ActiveWeapon.SMG: // SMG
+
+                break;
+            case ActiveWeapon.Rifle: // Rifle
+
+                break;
+        }
+    }
 }
+
