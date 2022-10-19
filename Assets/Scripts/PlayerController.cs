@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private int currentAmmo = 5;
 
+    private int _currentHealth;
+
 
     [SerializeField]
     private float _speed;
@@ -69,7 +71,7 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-        
+        _currentHealth = 3;
         _playerControls = new PlayerControls();
         _playerControls.Controller.Enable();
         InputSetup();
@@ -244,6 +246,15 @@ public class PlayerController : MonoBehaviour
             }
             currentAmmo--;
         }
+    }
+
+    public void TakeDamage()
+    {
+        _currentHealth--;
+    }
+    public void Heal()
+    {
+        _currentHealth++;
     }
 
 

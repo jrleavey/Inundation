@@ -183,7 +183,7 @@ public class CoreAI : MonoBehaviour
 
         if (_navMeshAgent.remainingDistance < 1.5f)
         {
-           // attack player
+            _anim.SetTrigger("Attack");
         }
     }
     private void Damage()
