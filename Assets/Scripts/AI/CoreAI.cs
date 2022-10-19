@@ -30,6 +30,7 @@ public class CoreAI : MonoBehaviour
 
     [SerializeField]
     private bool _IAmWaiting;
+    private bool _amIAttacking;
     public bool _isChasingPlayer;
     public bool canSeePlayer;
     private bool isDying = false;
@@ -84,6 +85,16 @@ public class CoreAI : MonoBehaviour
         if (canSeePlayer == true)
         {
             _AIState = AIState.Hostile;
+        }
+
+        if (_IAmWaiting == true)
+        {
+            _anim.SetBool("isWalking", false);
+        }
+        else if (_IAmWaiting == false && _amIAttacking == false)
+        {
+            _anim.SetBool("isWalking", true);
+
         }
         if (isDying == true)
         {
