@@ -75,6 +75,7 @@ public class CoreAI : MonoBehaviour
                 Wander();
                 break;
             case AIState.Hostile:
+                StopCoroutine(RandomWaitTimer());
                 ChasePlayer();
                 break;
             case AIState.Dying:

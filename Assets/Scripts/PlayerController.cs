@@ -87,6 +87,11 @@ public class PlayerController : MonoBehaviour
     {
         MovementController();
         WeaponControls();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     private void MovementController()
@@ -395,7 +400,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Menu_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        InventoryManager.Instance.GetComponent<InventoryManager>().ListItems();
+        UIManager.Instance.GetComponent<UIManager>().PauseMenu();
     }
 
     private IEnumerator ReloadTimers()
