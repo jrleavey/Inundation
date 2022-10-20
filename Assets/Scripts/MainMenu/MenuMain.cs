@@ -4,12 +4,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
 
-public class UIManager : MonoBehaviour
-{
-    public static UIManager Instance;
 
-    private bool isTheGamePaused = false;
-    public GameObject _pausemenu;
+public class MenuMain : MonoBehaviour
+{
 
     public GameObject _mainFirstButton;
     public GameObject _optionsFirstButton;
@@ -27,40 +24,52 @@ public class UIManager : MonoBehaviour
     public PostProcessProfile brightness;
     public PostProcessLayer layer;
     AutoExposure exposure;
+
     private void Start()
     {
-        Instance = this;
-        Time.timeScale = 1;
-        isTheGamePaused = false;
-    }
-
-    public void PauseMenu()
-    {
-        isTheGamePaused = !isTheGamePaused;
-
-
-        if (isTheGamePaused == true)
+        if (!PlayerPrefs.HasKey("Volume"))
         {
-            Time.timeScale = 0;
-            _pausemenu.SetActive(true);
-            EventSystem.current.SetSelectedGameObject(null);
-            EventSystem.current.SetSelectedGameObject(_mainFirstButton);
+            PlayerPrefs.SetFloat("Volume", 1);
         }
         else
         {
-            Time.timeScale = 1;
-            _pausemenu.SetActive(false);
-
+            Load();
         }
+
+        brightness.TryGetSettings(out exposure);
+        AdjustBrightness(BrightnessSlider.value);
     }
-    public void Resume()
+    public void Play() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+    public void Quit()
     {
-        Time.timeScale = 1;
-        _pausemenu.SetActive(false);
-    }    
-    private void Update()
+        Application.Quit();
+    }
+
+    public void OptionsMenu()
     {
-        
+        _optionsMenuSlide.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_optionsFirstButton);
+    }
+    public void CloseOptionsMenu()
+    {
+        _optionsMenuSlide.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_optionsClosedButton);
+    }
+
+    public void CreditsMenu()
+    {
+        _creditsMenuSlide.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_creditsFirstButton);
+    }
+    public void CloseCreditsMenu()
+    {
+        _creditsMenuSlide.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_creditsClosedButton);
     }
     public void AdjustVolume(float value)
     {
@@ -90,22 +99,5 @@ public class UIManager : MonoBehaviour
     public void ChangeScreen()
     {
         Screen.fullScreen = !Screen.fullScreen;
-    }
-    public void OptionsMenu()
-    {
-        _optionsMenuSlide.SetActive(true);
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(_optionsFirstButton);
-    }
-    public void CloseOptionsMenu()
-    {
-        _optionsMenuSlide.SetActive(false);
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(_optionsClosedButton);
-    }
-
-    public void ReturnToMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
     }
 }
