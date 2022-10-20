@@ -2935,6 +2935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546f26b19cc580a4a9099b4b799c0a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainFirstButton: {fileID: 1630911335}
   optionsFirstButton: {fileID: 1624716423}
   optionsClosedButton: {fileID: 2106112623}
   creditsFirstButton: {fileID: 1624716423}
@@ -4202,7 +4203,7 @@ Canvas:
   m_GameObject: {fileID: 1543012370}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 601066501}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
