@@ -23,7 +23,7 @@ public class MainMenuOption : MonoBehaviour
     {
         brightness.TryGetSettings(out exposure);
         AdjustVolume(volumeSlider.value);
-        AdjustVolume(brightnessSlider.value);
+        AdjustBrightness(brightnessSlider.value);
     }
     public void AdjustVolume(float value)
     {
@@ -33,7 +33,8 @@ public class MainMenuOption : MonoBehaviour
 
     public void AdjustBrightness(float value)
     {
-        if(value!=0)
+        brightnessSliderNumber.text = value.ToString();
+        if (value!=0)
         {
             exposure.keyValue.value = value;
         }
