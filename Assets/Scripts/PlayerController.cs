@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     private int magazineCapacity = 6;
     [SerializeField]
     private int currentAmmo = 6;
+    private int maxAmmo = 10;
 
     private int _currentHealth;
 
