@@ -17,11 +17,7 @@ public class Particles : MonoBehaviour
 
     public void PlayMuzzleFlash()
     {
-        switch (playerController.)
-        {
-            case _ActiveWeapon. 
         
-        }
 
     }
 }

@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
         Rifle
     }
     [SerializeField]
-    private ActiveWeapon _ActiveWeapon;
+    public ActiveWeapon _ActiveWeapon;
 
     private PlayerControls _playerControls;
 
