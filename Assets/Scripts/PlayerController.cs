@@ -278,7 +278,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage()
     {
         _currentHealth--;
-        CMCameraShake.Instance.ShakeCamera(5f, .1f);
+        CMCameraShake.Instance.ShakeCamera(1f, .5f);
     }
     public void Heal()
     {
