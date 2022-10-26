@@ -6365,11 +6365,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ActiveWeapon: 0
-  handgunAmmo: 0
+  handgunAmmo: 12
   shotgunAmmo: 0
   smgAmmo: 0
   rifleAmmo: 0
-  currentAmmo: 100
+  magazineCapacity: 6
+  currentAmmo: 6
   _speed: 5
   _rotateSpeed: 100
   fireRate: 1.2

@@ -28,9 +28,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private int rifleAmmo;
 
+    [SerializeField]
     private int magazineCapacity = 6;
     [SerializeField]
     private int currentAmmo = 6;
+
 
     private int _currentHealth;
 
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float nextFire = -1f;
     private float gunDamage = 1;
+    private float reloadtime;
 
 
     [SerializeField]
@@ -162,13 +165,12 @@ public class PlayerController : MonoBehaviour
 
     private void PistolLogic()
     {
-        
         magazineCapacity = 6;
-
+        reloadtime = 2f;
         fireRate = 1.3f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire && isReloading == false)
         {
-            
+            currentAmmo--;
             _revolverAnim.SetTrigger("Shoot");
             StartCoroutine(FireAnimTimers());
             aButton = false;
@@ -180,13 +182,14 @@ public class PlayerController : MonoBehaviour
                 hit.collider.SendMessage("Damage", gunDamage);
                 Debug.DrawLine(RaycastHolders[0].transform.position, hit.point, Color.red, 1f);
                 Debug.Log("Fired Raycast");
-                currentAmmo--;
-
             }
         }
     }
     private void ShotgunLogic()
     {
+        magazineCapacity = 5;
+        reloadtime = 3f;
+        fireRate = 1f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
             aButton = false;
@@ -218,6 +221,9 @@ public class PlayerController : MonoBehaviour
     }
     private void SMGLogic()
     {
+        magazineCapacity = 30;
+        reloadtime = 2.3f;
+        fireRate = .1f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
@@ -250,6 +256,9 @@ public class PlayerController : MonoBehaviour
 
     private void RifleLogic()
     {
+        magazineCapacity = 1;
+        reloadtime = 4f;
+        fireRate = 1f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
             aButton = false;
@@ -274,39 +283,6 @@ public class PlayerController : MonoBehaviour
     {
         _currentHealth++;
     }
-    public void SwapToRevolver()
-    {
-
-    }
-    public void SwapToShotgun()
-    {
-        if (_ActiveWeapon == ActiveWeapon.Handgun)
-        {
-            handgunAmmo += currentAmmo;
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private void InputSetup()
     {
         _playerControls.Controller.LeftStickClick.performed += LeftStickClick_performed;
@@ -350,23 +326,39 @@ public class PlayerController : MonoBehaviour
     }
     private void RightStickClick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        isReloading = true;
-
         switch (_ActiveWeapon)
         {
             case ActiveWeapon.Handgun: // Pistol
-                _revolverAnim.SetBool("isReloading", true);
-                StartCoroutine(ReloadTimers());
-
+                if (currentAmmo != 6)
+                {
+                    isReloading = true;
+                    _revolverAnim.SetBool("isReloading", true);
+                    StartCoroutine(ReloadTimers());
+                }
                 break;
             case ActiveWeapon.Shotgun: // Shotgun
+                if (currentAmmo != 5)
+                {
+                    isReloading = true;
 
+                    StartCoroutine(ReloadTimers());
+                }
                 break;
             case ActiveWeapon.SMG: // SMG
+                if (currentAmmo != 30)
+                {
+                    isReloading = true;
 
+                    StartCoroutine(ReloadTimers());
+                }
                 break;
             case ActiveWeapon.Rifle: // Rifle
+                if (currentAmmo != 1)
+                {
+                    isReloading = true;
 
+                    StartCoroutine(ReloadTimers());
+                }
                 break;
         }
 
@@ -405,20 +397,56 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator ReloadTimers()
     {
+        int missingbullets;
         switch (_ActiveWeapon)
         {
             case ActiveWeapon.Handgun: // Pistol
-                yield return new WaitForSeconds(2f);
+                missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
+                yield return new WaitForSeconds(reloadtime);
                 _revolverAnim.SetBool("isReloading", false);
+                if (handgunAmmo >= magazineCapacity)
+                {
+                    currentAmmo = magazineCapacity;
+                    handgunAmmo -= missingbullets;
+                }
+                else
+                {
+                    currentAmmo = handgunAmmo;
+                    handgunAmmo = 0;
+                }
+                isReloading = false;
                 break;
-            case ActiveWeapon.Shotgun: // Shotgun
- 
-                break;
-            case ActiveWeapon.SMG: // SMG
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            case ActiveWeapon.Shotgun: // Shotgun 
+                yield return new WaitForSeconds(reloadtime);
+                
+                
                 break;
+
+            case ActiveWeapon.SMG: // SMG
+                
+
             case ActiveWeapon.Rifle: // Rifle
-  
+                yield return new WaitForSeconds(reloadtime);
+                
+                
                 break;
         }
     }
