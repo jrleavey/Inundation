@@ -1,13 +1,45 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject mainFirstButton;
+
+    public GameObject optionsFirstButton;
+    public GameObject optionsClosedButton;
+
+    public GameObject creditsFirstButton;
+    public GameObject creditsClosedButton;
+
+    public GameObject optionsMenuSlide;
+    public GameObject creditsMenuSlide;
     public void Play() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
-    public void Quit()
+    public void Quit()=>Application.Quit();
+
+    public void OpenOptionsMenu()
     {
-        Application.Quit();
+        optionsMenuSlide.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionsFirstButton);
+    }
+    public void CloseOptionsMenu()
+    {
+        optionsMenuSlide.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionsClosedButton);
+    }
+    public void CreditsMenu()
+    {
+        creditsMenuSlide.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(creditsFirstButton);
+    }
+    public void CloseCreditsMenu()
+    {
+        creditsMenuSlide.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(creditsClosedButton);
     }
 }
