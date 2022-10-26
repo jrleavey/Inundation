@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
 
 
     private int _currentHealth;
-    public CameraShake cameraShake;
 
 
     [SerializeField]
@@ -279,7 +278,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage()
     {
         _currentHealth--;
-        StartCoroutine(cameraShake.Shake(.15f, .4f));
+        CMCameraShake.Instance.ShakeCamera(5f, .1f);
     }
     public void Heal()
     {
