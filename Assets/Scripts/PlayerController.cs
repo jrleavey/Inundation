@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private enum ActiveWeapon
+    public enum ActiveWeapon
     {
         Handgun,
         Shotgun,
