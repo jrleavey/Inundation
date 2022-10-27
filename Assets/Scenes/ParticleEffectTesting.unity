@@ -543,10 +543,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 177483507142910234, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4161495673232698893, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -594,38 +590,6 @@ PrefabInstance:
     - target: {fileID: 5277985906663746216, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
       propertyPath: m_Name
       value: PistolFirePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 6398783553235949806, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: m_Name
-      value: PistolLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 6398783553235949807, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 8.3e-44
-      objectReference: {fileID: 0}
-    - target: {fileID: 6398783553235949807, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 0.000003355858
-      objectReference: {fileID: 0}
-    - target: {fileID: 6398783553235949807, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 4.9764033e+12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6398783553235949807, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 6.52e-43
-      objectReference: {fileID: 0}
-    - target: {fileID: 6398783554051351452, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6398783554051351452, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: LightsModule.maxLights
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6398783554051351452, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba0f279f28a36f947a5c9355d5560324, type: 3}
@@ -680,41 +644,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3250281974963898566, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 2.1685555e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3250281974963898566, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 6.52e-43
-      objectReference: {fileID: 0}
-    - target: {fileID: 3250281974963898566, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 3.0206323e+32
-      objectReference: {fileID: 0}
-    - target: {fileID: 3250281974963898566, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 7.142967e+31
-      objectReference: {fileID: 0}
-    - target: {fileID: 8956774348539612285, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
-      propertyPath: m_Name
-      value: ShotgunLight
-      objectReference: {fileID: 0}
     - target: {fileID: 9161930592025007430, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
       propertyPath: m_Name
       value: ShotgunFirePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 9209176921961900855, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
-      propertyPath: LightsModule.maxLights
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 9209176921961900855, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9209176921961900855, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f2f4e5da170cc94ba8ea5efa768137f, type: 3}
@@ -728,162 +660,6 @@ PrefabInstance:
     - target: {fileID: 581916006002841811, guid: 6e57593305f55874a80e42a651504dee, type: 3}
       propertyPath: m_Name
       value: SMGFirePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 581916006002841811, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983462, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983462, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: LightsModule.maxLights
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_BurstCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSize.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.maxCurve.m_Curve.Array.data[0].inWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.maxCurve.m_Curve.Array.data[1].inWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[0].inWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[1].inWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.maxCurve.m_Curve.Array.data[0].outWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.maxCurve.m_Curve.Array.data[1].outWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[0].outWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729983463, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[1].outWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848740729984536, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6752a186c9dc88145abdb5e7dc1a4d3c, type: 2}
-    - target: {fileID: 1864848741012449940, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848741012449940, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848741012449940, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848741012449940, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_ColorTemperature
-      value: 6128
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848741012449940, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 1.05e-43
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848741012449940, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 0.00017186403
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848741012449940, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 3.2399698e+12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848741012449940, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 6.52e-43
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864848741012449941, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: m_Name
-      value: SMGLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSpeed.minScalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSize.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].cycleCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853404848707752801, guid: 6e57593305f55874a80e42a651504dee, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8713576829736197238, guid: 6e57593305f55874a80e42a651504dee, type: 3}
       propertyPath: m_RootOrder
@@ -943,18 +719,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 38405132244730331, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 38405132244730331, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: LightsModule.maxLights
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 38405132244730331, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 576852149377103087, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -999,49 +763,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 737689696537883995, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_Name
-      value: ARLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379766992634800622, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 1e-45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379766992634800622, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 4.19083e+21
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379766992634800622, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379766992634800622, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4732365290253824313, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
       propertyPath: m_Name
       value: ARFirePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 8556482234799434461, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9205045052087239651, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 2.1685555e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9205045052087239651, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 7.0062207e+22
-      objectReference: {fileID: 0}
-    - target: {fileID: 9205045052087239651, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 3.0206323e+32
-      objectReference: {fileID: 0}
-    - target: {fileID: 9205045052087239651, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 7.142967e+31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c06b8581dd6debe49941deed65ea69f9, type: 3}
