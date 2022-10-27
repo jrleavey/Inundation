@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private enum ActiveWeapon
+    public enum ActiveWeapon
     {
         Handgun,
         Shotgun,
@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
         Rifle
     }
     [SerializeField]
-    private ActiveWeapon _ActiveWeapon;
+    public ActiveWeapon _ActiveWeapon;
 
     private PlayerControls _playerControls;
 
@@ -28,9 +28,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private int rifleAmmo;
 
+    [SerializeField]
     private int magazineCapacity = 6;
     [SerializeField]
-    private int currentAmmo = 5;
+    private int currentAmmo = 6;
+
+
+    private int _currentHealth;
 
 
     [SerializeField]
@@ -39,16 +43,20 @@ public class PlayerController : MonoBehaviour
     private float _rotateSpeed;
     private float _eyeRot;
     [SerializeField]
-    private float fireRate = .5f;
+    private float fireRate = 5f;
     [SerializeField]
     private float nextFire = -1f;
     private float gunDamage = 1;
+    private float reloadtime;
 
 
     [SerializeField]
     private bool isAiming;
+    [SerializeField]
     private bool isMoving;
+    [SerializeField]
     private bool isReloading;
+    [SerializeField]
     private bool aButton;
 
 
@@ -58,6 +66,9 @@ public class PlayerController : MonoBehaviour
     private GameObject[] RaycastHolders;
     [SerializeField]
     private GameObject[] _Weapons;
+
+    [SerializeField]
+    private Animator _revolverAnim;
 
     
 
@@ -69,7 +80,7 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-        
+        _currentHealth = 3;
         _playerControls = new PlayerControls();
         _playerControls.Controller.Enable();
         InputSetup();
@@ -79,6 +90,11 @@ public class PlayerController : MonoBehaviour
     {
         MovementController();
         WeaponControls();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     private void MovementController()
@@ -90,7 +106,6 @@ public class PlayerController : MonoBehaviour
         float updownspeed = -rightStick.y * _rotateSpeed * Time.deltaTime;
 
         transform.Rotate(0, turnspeed, 0);
-        //_playerEyes.transform.Rotate(updownspeed, 0, 0);
 
         _eyeRot += updownspeed;
 
@@ -150,8 +165,14 @@ public class PlayerController : MonoBehaviour
 
     private void PistolLogic()
     {
-        if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
+        magazineCapacity = 6;
+        reloadtime = 2f;
+        fireRate = 1.3f;
+        if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire && isReloading == false)
         {
+            currentAmmo--;
+            _revolverAnim.SetTrigger("Shoot");
+            StartCoroutine(FireAnimTimers());
             aButton = false;
             RaycastHit hit;
             nextFire = Time.time + fireRate;
@@ -162,11 +183,13 @@ public class PlayerController : MonoBehaviour
                 Debug.DrawLine(RaycastHolders[0].transform.position, hit.point, Color.red, 1f);
                 Debug.Log("Fired Raycast");
             }
-            currentAmmo--;
         }
     }
     private void ShotgunLogic()
     {
+        magazineCapacity = 5;
+        reloadtime = 3f;
+        fireRate = 1f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
             aButton = false;
@@ -198,6 +221,9 @@ public class PlayerController : MonoBehaviour
     }
     private void SMGLogic()
     {
+        magazineCapacity = 30;
+        reloadtime = 2.3f;
+        fireRate = .1f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
@@ -230,6 +256,9 @@ public class PlayerController : MonoBehaviour
 
     private void RifleLogic()
     {
+        magazineCapacity = 1;
+        reloadtime = 4f;
+        fireRate = 1f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
             aButton = false;
@@ -246,27 +275,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public void TakeDamage()
+    {
+        _currentHealth--;
+        CMCameraShake.Instance.ShakeCamera(1f, .5f);
+    }
+    public void Heal()
+    {
+        _currentHealth++;
+    }
     private void InputSetup()
     {
         _playerControls.Controller.LeftStickClick.performed += LeftStickClick_performed;
@@ -310,7 +327,42 @@ public class PlayerController : MonoBehaviour
     }
     private void RightStickClick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        isReloading = true;
+        switch (_ActiveWeapon)
+        {
+            case ActiveWeapon.Handgun: // Pistol
+                if (currentAmmo != 6)
+                {
+                    isReloading = true;
+                    _revolverAnim.SetBool("isReloading", true);
+                    StartCoroutine(ReloadTimers());
+                }
+                break;
+            case ActiveWeapon.Shotgun: // Shotgun
+                if (currentAmmo != 5)
+                {
+                    isReloading = true;
+
+                    StartCoroutine(ReloadTimers());
+                }
+                break;
+            case ActiveWeapon.SMG: // SMG
+                if (currentAmmo != 30)
+                {
+                    isReloading = true;
+
+                    StartCoroutine(ReloadTimers());
+                }
+                break;
+            case ActiveWeapon.Rifle: // Rifle
+                if (currentAmmo != 1)
+                {
+                    isReloading = true;
+
+                    StartCoroutine(ReloadTimers());
+                }
+                break;
+        }
+
         StartCoroutine(RStickFailsafeEnd());
     }
     private void Interact_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -341,7 +393,82 @@ public class PlayerController : MonoBehaviour
     }
     private void Menu_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        InventoryManager.Instance.GetComponent<InventoryManager>().ListItems();
+        UIManager.Instance.GetComponent<UIManager>().PauseMenu();
     }
 
+    private IEnumerator ReloadTimers()
+    {
+        int missingbullets;
+        switch (_ActiveWeapon)
+        {
+            case ActiveWeapon.Handgun: // Pistol
+                missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
+                yield return new WaitForSeconds(reloadtime);
+                _revolverAnim.SetBool("isReloading", false);
+                if (handgunAmmo >= magazineCapacity)
+                {
+                    currentAmmo = magazineCapacity;
+                    handgunAmmo -= missingbullets;
+                }
+                else
+                {
+                    currentAmmo = handgunAmmo;
+                    handgunAmmo = 0;
+                }
+                isReloading = false;
+                break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            case ActiveWeapon.Shotgun: // Shotgun 
+                yield return new WaitForSeconds(reloadtime);
+                
+                
+                break;
+
+            case ActiveWeapon.SMG: // SMG
+                
+
+            case ActiveWeapon.Rifle: // Rifle
+                yield return new WaitForSeconds(reloadtime);
+                
+                
+                break;
+        }
+    }
+    private IEnumerator FireAnimTimers()
+    {
+        switch (_ActiveWeapon)
+        {
+            case ActiveWeapon.Handgun: // Pistol
+                yield return new WaitForSeconds(1.2f);
+                _revolverAnim.ResetTrigger("Shoot");
+                break;
+            case ActiveWeapon.Shotgun: // Shotgun
+
+                break;
+            case ActiveWeapon.SMG: // SMG
+
+                break;
+            case ActiveWeapon.Rifle: // Rifle
+
+                break;
+        }
+    }
 }
+
