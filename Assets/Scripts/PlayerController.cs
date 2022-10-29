@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private int currentAmmo = 6;
 
-
-    private int _currentHealth;
+    [SerializeField]
+    private int _currentHealth = 5;
 
 
     [SerializeField]
@@ -58,6 +58,8 @@ public class PlayerController : MonoBehaviour
     private bool isReloading;
     [SerializeField]
     private bool aButton;
+    [SerializeField]
+    public bool isInvincible = false;
 
 
     [SerializeField]
@@ -70,8 +72,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Animator _revolverAnim;
 
-    
+    [SerializeField]
+    private GameObject _bloodSplatter;
 
+
+    [SerializeField] ParticleSystem shotgunffect;
+    [SerializeField] ParticleSystem smgEffect;
+    [SerializeField] ParticleSystem handgunEffect;
+    [SerializeField] ParticleSystem rifleEffect;
 
 
     private void Awake()
@@ -170,6 +178,7 @@ public class PlayerController : MonoBehaviour
         fireRate = 1.3f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire && isReloading == false)
         {
+            handgunEffect.Play();
             currentAmmo--;
             _revolverAnim.SetTrigger("Shoot");
             StartCoroutine(FireAnimTimers());
@@ -181,7 +190,10 @@ public class PlayerController : MonoBehaviour
             {
                 hit.collider.SendMessage("Damage", gunDamage);
                 Debug.DrawLine(RaycastHolders[0].transform.position, hit.point, Color.red, 1f);
-                Debug.Log("Fired Raycast");
+                if (hit.transform.tag == "Enemy")
+                {
+                    Instantiate(_bloodSplatter, hit.point, Quaternion.identity);
+                }
             }
         }
     }
@@ -277,12 +289,38 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage()
     {
-        _currentHealth--;
-        CMCameraShake.Instance.ShakeCamera(1f, .5f);
+        if (isInvincible == true)
+        {
+            return;
+        }
+        else
+        {
+            _currentHealth--;
+            CMCameraShake.Instance.ShakeCamera(1f, .5f);
+            if (_currentHealth == 0)
+            {
+                Die();
+                return;
+            }
+            StartCoroutine(BecomeInvincible());
+        }
+    }
+    private IEnumerator BecomeInvincible()
+    {
+        isInvincible = true;
+
+        yield return new WaitForSeconds(1f);
+        isInvincible = false;
     }
     public void Heal()
     {
+
         _currentHealth++;
+    }
+    public void Die()
+    {
+        // Play sound effect
+        //Open Game Over Screen
     }
     private void InputSetup()
     {
