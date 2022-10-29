@@ -341,8 +341,8 @@ public class PlayerController : MonoBehaviour
             switch (_ActiveWeapon)
             {
                 case ActiveWeapon.Handgun: //Pistol
-                    //Ready Pistol
                     _Weapons[0].SetActive(true);
+                    _revolverAnim.SetBool("isAiming", true);
                     break;
                 case ActiveWeapon.Shotgun: //Shotgun
                         //Ready Shotgun
@@ -360,7 +360,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            //Lower Equipped Weapon
+            _revolverAnim.SetBool("isAiming", false);
+
         }
     }
     private void RightStickClick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
