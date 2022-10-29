@@ -1,46 +1,33 @@
-using System.Collections;
+using System;
 using UnityEngine;
 using static PlayerController;
 
 public class Particles : MonoBehaviour
 {
-    public enum WeaponType
-    {
-        Handgun,
-        Shotgun,
-        SMG,
-        AR
-    }
-
-   
-    [SerializeField] WeaponType weaponType;
     [SerializeField] ParticleSystem shotgunffect;
     [SerializeField] ParticleSystem smgEffect;
     [SerializeField] ParticleSystem handgunEffect;
     [SerializeField] ParticleSystem rifleEffect;
-    [SerializeField] float hiteffectAfterAfewSecond;
+    [SerializeField] GameObject hitEffect;
+    [SerializeField] LayerMask enemyLayerMask;
 
-    private void Update()
-    {
-        PlayMuzzleFlash(weaponType);
-    }
-    public void PlayMuzzleFlash(WeaponType weaponType)
+    public void PlayMuzzleFlash(ActiveWeapon weaponType)
     {
         switch (weaponType)
         {
-            case WeaponType.Handgun:
+            case ActiveWeapon.Handgun:
                 handgunEffect.Play();
                 break;
 
-            case WeaponType.Shotgun:
+            case ActiveWeapon.Shotgun:
                 shotgunffect.Play();
                 break;
 
-            case WeaponType.SMG:
+            case ActiveWeapon.SMG:
                 smgEffect.Play();
                 break;
 
-            case WeaponType.AR:
+            case ActiveWeapon.Rifle:
                 rifleEffect.Play();
                 break;
 
@@ -50,5 +37,18 @@ public class Particles : MonoBehaviour
         }
     }
 
-   
+    public void HitEffectOnEnemies()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Camera.main.transform.forward, out hit, 100f, enemyLayerMask))
+        {
+            CreateHitImpact(hit);
+        }
+    }
+
+    public void CreateHitImpact(RaycastHit hit)
+    {
+        GameObject impact =Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(impact, 0.5f);
+    }
 }
