@@ -108,4 +108,9 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    public void RetryGame()
+    {
+        // SceneManager.LoadScene
+        //Load Restart the game
+    }
 }

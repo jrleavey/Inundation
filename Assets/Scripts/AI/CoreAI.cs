@@ -48,6 +48,9 @@ public class CoreAI : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask ObstructionMask;
 
+
+    [SerializeField]
+    private GameObject[] _hitboxes;
     private BoxCollider _boxcollider;
 
 
@@ -180,17 +183,22 @@ public class CoreAI : MonoBehaviour
     }
     private void ChasePlayer()
     {
-        _isChasingPlayer = true;
-        _navMeshAgent.destination = _player.transform.position;
-
-        if (_navMeshAgent.remainingDistance < 2f)
+        if (_navMeshAgent != null)
         {
-            _anim.SetBool("isAttacking", true);
-        }
-        else
-        {
-            _anim.SetBool("isAttacking", false);
+            _isChasingPlayer = true;
+            _navMeshAgent.destination = _player.transform.position;
 
+            if (_navMeshAgent.remainingDistance < 2f)
+            {
+                _anim.SetBool("isAttacking", true);
+                _hitboxes[0].SetActive(true);
+            }
+            else
+            {
+                _anim.SetBool("isAttacking", false);
+                _hitboxes[0].SetActive(false);
+
+            }
         }
     }
     private void Damage()

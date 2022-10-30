@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private int currentAmmo = 6;
 
-
-    private int _currentHealth;
+    [SerializeField]
+    private int _currentHealth = 5;
 
 
     [SerializeField]
@@ -58,6 +58,8 @@ public class PlayerController : MonoBehaviour
     private bool isReloading;
     [SerializeField]
     private bool aButton;
+    [SerializeField]
+    public bool isInvincible = false;
 
 
     [SerializeField]
@@ -69,9 +71,17 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private Animator _revolverAnim;
+    [SerializeField]
+    private Animator _shotgunAnim;
 
-    
+    [SerializeField]
+    private GameObject _bloodSplatter;
 
+
+    [SerializeField] ParticleSystem shotgunffect;
+    [SerializeField] ParticleSystem smgEffect;
+    [SerializeField] ParticleSystem handgunEffect;
+    [SerializeField] ParticleSystem rifleEffect;
 
 
     private void Awake()
@@ -170,6 +180,7 @@ public class PlayerController : MonoBehaviour
         fireRate = 1.3f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire && isReloading == false)
         {
+            handgunEffect.Play();
             currentAmmo--;
             _revolverAnim.SetTrigger("Shoot");
             StartCoroutine(FireAnimTimers());
@@ -181,7 +192,10 @@ public class PlayerController : MonoBehaviour
             {
                 hit.collider.SendMessage("Damage", gunDamage);
                 Debug.DrawLine(RaycastHolders[0].transform.position, hit.point, Color.red, 1f);
-                Debug.Log("Fired Raycast");
+                if (hit.transform.tag == "Enemy")
+                {
+                    Instantiate(_bloodSplatter, hit.point, Quaternion.identity);
+                }
             }
         }
     }
@@ -189,9 +203,13 @@ public class PlayerController : MonoBehaviour
     {
         magazineCapacity = 5;
         reloadtime = 3f;
-        fireRate = 1f;
+        fireRate = 2.2f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
+            shotgunffect.Play();
+            currentAmmo--;
+            _shotgunAnim.SetTrigger("Shoot");
+            StartCoroutine(FireAnimTimers());
             aButton = false;
             nextFire = Time.time + fireRate;
             int amountOfProjectiles = 8;
@@ -212,6 +230,10 @@ public class PlayerController : MonoBehaviour
             spread += RaycastHolders[1].transform.right * Random.Range(-.05f, .05f);
             direction += spread.normalized * Random.Range(0f, 0.2f);
             hit.collider.SendMessage("Damage", gunDamage);
+            if (hit.transform.tag == "Enemy")
+            {
+                Instantiate(_bloodSplatter, hit.point, Quaternion.identity);
+            }
 
             if (Physics.Raycast(RaycastHolders[1].transform.position, direction, out hit, Mathf.Infinity))
             {
@@ -277,12 +299,38 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage()
     {
-        _currentHealth--;
-        CMCameraShake.Instance.ShakeCamera(1f, .5f);
+        if (isInvincible == true)
+        {
+            return;
+        }
+        else
+        {
+            _currentHealth--;
+            CMCameraShake.Instance.ShakeCamera(1f, .5f);
+            if (_currentHealth == 0)
+            {
+                Die();
+                return;
+            }
+            StartCoroutine(BecomeInvincible());
+        }
+    }
+    private IEnumerator BecomeInvincible()
+    {
+        isInvincible = true;
+
+        yield return new WaitForSeconds(1f);
+        isInvincible = false;
     }
     public void Heal()
     {
+
         _currentHealth++;
+    }
+    public void Die()
+    {
+        // Play sound effect
+        //Open Game Over Screen
     }
     private void InputSetup()
     {
@@ -303,12 +351,14 @@ public class PlayerController : MonoBehaviour
             switch (_ActiveWeapon)
             {
                 case ActiveWeapon.Handgun: //Pistol
-                    //Ready Pistol
                     _Weapons[0].SetActive(true);
+                    _revolverAnim.SetBool("isAiming", true);
                     break;
                 case ActiveWeapon.Shotgun: //Shotgun
                         //Ready Shotgun
                     _Weapons[1].SetActive(true);
+                    _shotgunAnim.SetBool("isAiming", true);
+
                     break;
                 case ActiveWeapon.SMG: //SMG
                         //Ready SMG
@@ -322,7 +372,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            //Lower Equipped Weapon
+            _revolverAnim.SetBool("isAiming", false);
+            _shotgunAnim.SetBool("isAiming", false);
         }
     }
     private void RightStickClick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -341,7 +392,7 @@ public class PlayerController : MonoBehaviour
                 if (currentAmmo != 5)
                 {
                     isReloading = true;
-
+                    _shotgunAnim.SetBool("isReloading", true);
                     StartCoroutine(ReloadTimers());
                 }
                 break;
@@ -418,27 +469,21 @@ public class PlayerController : MonoBehaviour
                 isReloading = false;
                 break;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             case ActiveWeapon.Shotgun: // Shotgun 
+                missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
                 yield return new WaitForSeconds(reloadtime);
-                
-                
+                _shotgunAnim.SetBool("isReloading", false);
+                if (shotgunAmmo >= magazineCapacity)
+                {
+                    currentAmmo = magazineCapacity;
+                    shotgunAmmo -= missingbullets;
+                }
+                else
+                {
+                    currentAmmo = shotgunAmmo;
+                    shotgunAmmo = 0;
+                }
+                isReloading = false;
                 break;
 
             case ActiveWeapon.SMG: // SMG
