@@ -71,6 +71,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private Animator _revolverAnim;
+    [SerializeField]
+    private Animator _shotgunAnim;
 
     [SerializeField]
     private GameObject _bloodSplatter;
@@ -201,9 +203,13 @@ public class PlayerController : MonoBehaviour
     {
         magazineCapacity = 5;
         reloadtime = 3f;
-        fireRate = 1f;
+        fireRate = 2.2f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
+            shotgunffect.Play();
+            currentAmmo--;
+            _shotgunAnim.SetTrigger("Shoot");
+            StartCoroutine(FireAnimTimers());
             aButton = false;
             nextFire = Time.time + fireRate;
             int amountOfProjectiles = 8;
@@ -224,6 +230,10 @@ public class PlayerController : MonoBehaviour
             spread += RaycastHolders[1].transform.right * Random.Range(-.05f, .05f);
             direction += spread.normalized * Random.Range(0f, 0.2f);
             hit.collider.SendMessage("Damage", gunDamage);
+            if (hit.transform.tag == "Enemy")
+            {
+                Instantiate(_bloodSplatter, hit.point, Quaternion.identity);
+            }
 
             if (Physics.Raycast(RaycastHolders[1].transform.position, direction, out hit, Mathf.Infinity))
             {
@@ -347,6 +357,8 @@ public class PlayerController : MonoBehaviour
                 case ActiveWeapon.Shotgun: //Shotgun
                         //Ready Shotgun
                     _Weapons[1].SetActive(true);
+                    _shotgunAnim.SetBool("isAiming", true);
+
                     break;
                 case ActiveWeapon.SMG: //SMG
                         //Ready SMG
@@ -361,7 +373,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             _revolverAnim.SetBool("isAiming", false);
-
+            _shotgunAnim.SetBool("isAiming", false);
         }
     }
     private void RightStickClick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -380,7 +392,7 @@ public class PlayerController : MonoBehaviour
                 if (currentAmmo != 5)
                 {
                     isReloading = true;
-
+                    _shotgunAnim.SetBool("isReloading", true);
                     StartCoroutine(ReloadTimers());
                 }
                 break;
@@ -457,27 +469,21 @@ public class PlayerController : MonoBehaviour
                 isReloading = false;
                 break;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             case ActiveWeapon.Shotgun: // Shotgun 
+                missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
                 yield return new WaitForSeconds(reloadtime);
-                
-                
+                _shotgunAnim.SetBool("isReloading", false);
+                if (shotgunAmmo >= magazineCapacity)
+                {
+                    currentAmmo = magazineCapacity;
+                    shotgunAmmo -= missingbullets;
+                }
+                else
+                {
+                    currentAmmo = shotgunAmmo;
+                    shotgunAmmo = 0;
+                }
+                isReloading = false;
                 break;
 
             case ActiveWeapon.SMG: // SMG

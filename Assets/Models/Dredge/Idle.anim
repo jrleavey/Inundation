@@ -1,0 +1,4271 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Idle
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.03713815, y: -0, z: -0, w: 0.99931014}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.03713815, y: -0, z: -0, w: 0.99931014}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.03713815, y: -0, z: -0, w: 0.99931014}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.03713815, y: -0, z: -0, w: 0.99931014}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.03713815, y: -0, z: -0, w: 0.99931014}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.03713815, y: -0, z: -0, w: 0.99931014}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.03713815, y: -0, z: -0, w: 0.99931014}
+        inSlope: {x: 0.019450217, y: 0, z: 0, w: -0.00073099136}
+        outSlope: {x: 0.019450217, y: 0, z: 0, w: -0.00073099136}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: 0.03513096, y: -0, z: -0, w: 0.99938273}
+        inSlope: {x: -0.009954374, y: 0, z: 0, w: 0.00035047464}
+        outSlope: {x: -0.009954374, y: 0, z: 0, w: 0.00035047464}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.03713815, y: -0, z: -0, w: 0.99931014}
+        inSlope: {x: 0.020121561, y: 0, z: 0, w: -0.0007395772}
+        outSlope: {x: 0.020121561, y: 0, z: 0, w: -0.0007395772}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.06072088, y: -0, z: -0, w: 0.9981548}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.06072088, y: -0, z: -0, w: 0.9981548}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.026552783, y: 0, z: -0, w: 0.99964744}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.026552783, y: 0, z: -0, w: 0.99964744}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.026552783, y: 0, z: -0, w: 0.99964744}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.026552783, y: 0, z: -0, w: 0.99964744}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.10834244, y: 0, z: -0, w: 0.9941137}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.10834244, y: 0, z: -0, w: 0.9941137}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0/DredgeRig_0001:BigRigs:CTRL_L_Eye_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0/DredgeRig_0001:BigRigs:CTRL_R_Eye_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:CTRL_L_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:CTRL_R_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.16433337, y: -0.012800736, z: 0.215478, w: 0.96249676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.16433337, y: -0.012800736, z: 0.215478, w: 0.96249676}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_L_Wrist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.10409929, y: -0, z: -0, w: 0.9945669}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.10409929, y: -0, z: -0, w: 0.9945669}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_L_Wrist_0/DredgeRig_0001:BigRigs:CTRL_L_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.17296077, y: 0.010869322, z: -0.2155844, w: 0.9609838}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.17296077, y: 0.010869322, z: -0.2155844, w: 0.9609838}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_R_Wrist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.10409929, y: -0, z: -0, w: 0.9945669}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.10409929, y: -0, z: -0, w: 0.9945669}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_R_Wrist_0/DredgeRig_0001:BigRigs:CTRL_R_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_L_Foot_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_R_Foot_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.047659647, y: -0, z: -0, w: 0.99886364}
+        inSlope: {x: -0.021780968, y: 0, z: 0, w: 0.0010299683}
+        outSlope: {x: -0.021780968, y: 0, z: 0, w: 0.0010299683}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: 0.04928252, y: -0, z: -0, w: 0.9987849}
+        inSlope: {x: 0.010892743, y: 0, z: 0, w: -0.00053787127}
+        outSlope: {x: 0.010892743, y: 0, z: 0, w: -0.00053787127}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.047659647, y: -0, z: -0, w: 0.99886364}
+        inSlope: {x: -0.02131363, y: 0, z: 0, w: 0.0010256807}
+        outSlope: {x: -0.02131363, y: 0, z: 0, w: 0.0010256807}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:IK_R_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.047659647, y: -0, z: -0, w: 0.99886364}
+        inSlope: {x: -0.021780968, y: 0, z: 0, w: 0.0010299683}
+        outSlope: {x: -0.021780968, y: 0, z: 0, w: 0.0010299683}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: 0.04928252, y: -0, z: -0, w: 0.9987849}
+        inSlope: {x: 0.010892743, y: 0, z: 0, w: -0.00053787127}
+        outSlope: {x: 0.010892743, y: 0, z: 0, w: -0.00053787127}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.047659647, y: -0, z: -0, w: 0.99886364}
+        inSlope: {x: -0.02131363, y: 0, z: 0, w: 0.0010256807}
+        outSlope: {x: -0.02131363, y: 0, z: 0, w: 0.0010256807}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:IK_L_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.020033993, y: -0.04455918, z: 0.21120866, w: 0.97621924}
+        inSlope: {x: 0.019001082, y: -0.004110664, z: -0.0008686781, w: 0.00038337708}
+        outSlope: {x: 0.019001082, y: -0.004110664, z: -0.0008686781, w: 0.00038337708}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: -0.021994697, y: -0.044134878, z: 0.21129774, w: 0.97617704}
+        inSlope: {x: -0.00972328, y: 0.002104636, z: 0.0004395238, w: -0.00021886783}
+        outSlope: {x: -0.00972328, y: 0.002104636, z: 0.0004395238, w: -0.00021886783}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.020033993, y: -0.04455918, z: 0.21120866, w: 0.97621924}
+        inSlope: {x: 0.019656107, y: -0.0042531057, z: -0.0008955036, w: 0.00041198888}
+        outSlope: {x: 0.019656107, y: -0.0042531057, z: -0.0008955036, w: 0.00041198888}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:BigRigs:IK_L_Wrist
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.028790299, y: 0.0426648, z: -0.21159983, w: 0.9760002}
+        inSlope: {x: 0.018997058, y: 0.0041182637, z: 0.0008325577, w: 0.00055217743}
+        outSlope: {x: 0.018997058, y: 0.0041182637, z: 0.0008325577, w: 0.00055217743}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: -0.030750545, y: 0.042239714, z: -0.21168509, w: 0.9759404}
+        inSlope: {x: -0.009720955, y: -0.0021084805, z: -0.00042074837, w: -0.00030612887}
+        outSlope: {x: -0.009720955, y: -0.0021084805, z: -0.00042074837, w: -0.00030612887}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.028790299, y: 0.0426648, z: -0.21159983, w: 0.9760002}
+        inSlope: {x: 0.019651636, y: 0.004260884, z: 0.00085723726, w: 0.0005879425}
+        outSlope: {x: 0.019651636, y: 0.004260884, z: 0.00085723726, w: 0.0005879425}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:BigRigs:IK_R_Wrist
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:BigRigs:IK_L_Foot
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:BigRigs:IK_R_Foot
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.70428693, y: 0.70428693, z: -0.06308685, w: -0.06308685}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.70428693, y: 0.70428693, z: -0.06308685, w: -0.06308685}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 3.0554073e-17, y: -0.12505382, z: -1.1140941e-16, w: 0.99214995}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 3.0554073e-17, y: -0.12505382, z: -1.1140941e-16, w: 0.99214995}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 5.4642195e-17, y: -0.03605701, z: -5.5472836e-17, w: 0.9993498}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 5.4642195e-17, y: -0.03605701, z: -5.5472836e-17, w: 0.9993498}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 4.9115553e-17, y: -0.0652173, z: 1.1346549e-19, w: 0.9978711}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 4.9115553e-17, y: -0.0652173, z: 1.1346549e-19, w: 0.9978711}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -6.767783e-17, y: -0.10300165, z: -6.3553445e-19, w: 0.9946812}
+        inSlope: {x: 2.0815443e-16, y: -0.019359648, z: 4.702522e-22, w: -0.0020127296}
+        outSlope: {x: 2.0815443e-16, y: -0.019359648, z: 4.702522e-22, w: -0.0020127296}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: -7.114602e-17, y: -0.10100362, z: -6.3558077e-19, w: 0.99488604}
+        inSlope: {x: -1.4570998e-16, y: 0.009909671, z: -2.3822756e-22, w: 0.001006363}
+        outSlope: {x: -1.4570998e-16, y: 0.009909671, z: -2.3822756e-22, w: 0.001006363}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -6.767783e-17, y: -0.10300165, z: -6.3553445e-19, w: 0.9946812}
+        inSlope: {x: -3.3308088e-16, y: -0.020029025, z: 4.6653163e-22, w: -0.0020656665}
+        outSlope: {x: -3.3308088e-16, y: -0.020029025, z: 4.6653163e-22, w: -0.0020656665}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -8.326673e-17, y: -0.167662, z: 7.9967358e-25, w: 0.98584455}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -8.326673e-17, y: -0.167662, z: 7.9967358e-25, w: 0.98584455}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -4.1633367e-17, y: -0.06248428, z: 1.6653347e-16, w: 0.998046}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -4.1633367e-17, y: -0.06248428, z: 1.6653347e-16, w: 0.998046}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -1.3877789e-16, y: -0.16432329, z: -1.110223e-16, w: 0.98640656}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -1.3877789e-16, y: -0.16432329, z: -1.110223e-16, w: 0.98640656}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 3.626534e-17, y: -0.27776435, z: 1.7722293e-16, w: 0.96064925}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 3.626534e-17, y: -0.27776435, z: 1.7722293e-16, w: 0.96064925}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.45574442, y: -0.45574442, z: -0.540645, w: 0.540645}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.45574442, y: -0.45574442, z: -0.540645, w: 0.540645}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:BigRigs:L_Eye_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.45574442, y: -0.45574442, z: -0.540645, w: 0.540645}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.45574442, y: -0.45574442, z: -0.540645, w: 0.540645}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:BigRigs:R_Eye_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.2509794, y: -0.10548153, z: -0.6926873, w: 0.66788274}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.2509794, y: -0.10548153, z: -0.6926873, w: 0.66788274}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:L_Flap_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.057797804, y: 0.10472848, z: 0.023131642, w: 0.99255043}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.057797804, y: 0.10472848, z: 0.023131642, w: 0.99255043}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:L_Flap_1/DredgeRig_0001:L_Flap_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.006783342, y: 0.07534064, z: -0.000076119344, w: 0.9971348}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.006783342, y: 0.07534064, z: -0.000076119344, w: 0.9971348}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:L_Flap_1/DredgeRig_0001:L_Flap_2/DredgeRig_0001:L_Flap_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.015422235, y: 0.0084824255, z: -0.002407136, w: 0.9998422}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.015422235, y: 0.0084824255, z: -0.002407136, w: 0.9998422}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:L_Flap_1/DredgeRig_0001:L_Flap_2/DredgeRig_0001:L_Flap_3/DredgeRig_0001:L_Flap_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:L_Flap_1/DredgeRig_0001:L_Flap_2/DredgeRig_0001:L_Flap_3/DredgeRig_0001:L_Flap_4/DredgeRig_0001:L_Flap_5
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.25098163, y: -0.10548781, z: 0.692688, w: 0.6678801}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.25098163, y: -0.10548781, z: 0.692688, w: 0.6678801}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:R_Flap_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.057802994, y: 0.10473348, z: -0.02313376, w: 0.99254954}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.057802994, y: 0.10473348, z: -0.02313376, w: 0.99254954}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:R_Flap_1/DredgeRig_0001:R_Flap_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.0067887134, y: 0.07534095, z: 0.000077684344, w: 0.99713475}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.0067887134, y: 0.07534095, z: 0.000077684344, w: 0.99713475}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:R_Flap_1/DredgeRig_0001:R_Flap_2/DredgeRig_0001:R_Flap_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.015415945, y: 0.008482494, z: 0.0024054497, w: 0.99984235}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.015415945, y: 0.008482494, z: 0.0024054497, w: 0.99984235}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:R_Flap_1/DredgeRig_0001:R_Flap_2/DredgeRig_0001:R_Flap_3/DredgeRig_0001:R_Flap_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:R_Flap_1/DredgeRig_0001:R_Flap_2/DredgeRig_0001:R_Flap_3/DredgeRig_0001:R_Flap_4/DredgeRig_0001:R_Flap_5
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.04225663, y: 0.08154314, z: 0.4581581, w: 0.88411325}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.04225663, y: 0.08154314, z: 0.4581581, w: 0.88411325}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.56240517, y: 0.67761105, z: 0.36977184, w: 0.29633173}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.56240517, y: 0.67761105, z: 0.36977184, w: 0.29633173}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.14114507, y: 0.23419166, z: -0.021558162, w: 0.9616484}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.14114507, y: 0.23419166, z: -0.021558162, w: 0.9616484}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1/DredgeRig_0001:BigRigs:R_Arm_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.40979946, y: 0.24721754, z: -0.19516584, w: 0.85607135}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.40979946, y: 0.24721754, z: -0.19516584, w: 0.85607135}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1/DredgeRig_0001:BigRigs:R_Arm_2/DredgeRig_0001:BigRigs:R_Arm_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.04549353, y: -0.26386967, z: -0.05281333, w: 0.9620363}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.04549353, y: -0.26386967, z: -0.05281333, w: 0.9620363}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1/DredgeRig_0001:BigRigs:R_Arm_2/DredgeRig_0001:BigRigs:R_Arm_3/DredgeRig_0001:BigRigs:R_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.04225663, y: 0.08154314, z: -0.4581581, w: 0.88411325}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.04225663, y: 0.08154314, z: -0.4581581, w: 0.88411325}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.55552197, y: 0.68108743, z: -0.37540781, w: 0.29425195}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.55552197, y: 0.68108743, z: -0.37540781, w: 0.29425195}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.14136273, y: 0.24162893, z: 0.022253241, w: 0.95975876}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.14136273, y: 0.24162893, z: 0.022253241, w: 0.95975876}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1/DredgeRig_0001:BigRigs:L_Arm_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.41322365, y: 0.23099613, z: 0.18426579, w: 0.8613554}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.41322365, y: 0.23099613, z: 0.18426579, w: 0.8613554}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1/DredgeRig_0001:BigRigs:L_Arm_2/DredgeRig_0001:BigRigs:L_Arm_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.04549353, y: -0.26386967, z: 0.05281333, w: 0.9620363}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.04549353, y: -0.26386967, z: 0.05281333, w: 0.9620363}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1/DredgeRig_0001:BigRigs:L_Arm_2/DredgeRig_0001:BigRigs:L_Arm_3/DredgeRig_0001:BigRigs:L_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.040446695, y: 0.9800242, z: -0.006216668, w: -0.19462262}
+        inSlope: {x: 0.0013833046, y: -0.009864807, z: 0.0025470257, w: -0.049196005}
+        outSlope: {x: 0.0013833046, y: -0.009864807, z: 0.0025470257, w: -0.049196005}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: 0.04020263, y: 0.9793029, z: -0.0061341203, w: -0.19827257}
+        inSlope: {x: -0.0006269652, y: 0.0059966925, z: -0.0014626449, w: 0.029535715}
+        outSlope: {x: -0.0006269652, y: 0.0059966925, z: -0.0014626449, w: 0.029535715}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.040446695, y: 0.9800242, z: -0.006216668, w: -0.19462262}
+        inSlope: {x: 0.0014014596, y: -0.00993494, z: 0.002582787, w: -0.050097775}
+        outSlope: {x: 0.0014014596, y: -0.00993494, z: 0.002582787, w: -0.050097775}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:R_Leg_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.024937624, y: -0.35886955, z: -0.0068626828, w: 0.9330293}
+        inSlope: {x: 0.0006560683, y: -0.08446741, z: -0.0016863942, w: -0.03266716}
+        outSlope: {x: 0.0006560683, y: -0.08446741, z: -0.0016863942, w: -0.03266716}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: -0.024972372, y: -0.3545441, z: -0.006776884, w: 0.9346812}
+        inSlope: {x: -0.00036978652, y: 0.045208726, z: 0.0008935092, w: 0.017145362}
+        outSlope: {x: -0.00036978652, y: 0.045208726, z: 0.0008935092, w: 0.017145362}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.024937624, y: -0.35886955, z: -0.0068626828, w: 0.9330293}
+        inSlope: {x: 0.00069089496, y: -0.08626518, z: -0.0017121946, w: -0.03298486}
+        outSlope: {x: 0.00069089496, y: -0.08626518, z: -0.0017121946, w: -0.03298486}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:R_Leg_0/DredgeRig_0001:BigRigs:R_Leg_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.07761319, y: 0.58942384, z: 0.050620638, w: 0.80249196}
+        inSlope: {x: 0.0017094612, y: 0.0324111, z: -0.0029191375, w: -0.02382946}
+        outSlope: {x: 0.0017094612, y: 0.0324111, z: -0.0029191375, w: -0.02382946}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: 0.07730841, y: 0.58268553, z: 0.051184535, w: 0.8073915}
+        inSlope: {x: -0.00079232303, y: -0.014709922, z: 0.0013232206, w: 0.010607937}
+        outSlope: {x: -0.00079232303, y: -0.014709922, z: 0.0013232206, w: 0.010607937}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.07761319, y: 0.58942384, z: 0.050620638, w: 0.80249196}
+        inSlope: {x: 0.0017244882, y: 0.03317655, z: -0.002982002, w: -0.024301622}
+        outSlope: {x: 0.0017244882, y: 0.03317655, z: -0.002982002, w: -0.024301622}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:R_Leg_0/DredgeRig_0001:BigRigs:R_Leg_1/DredgeRig_0001:BigRigs:R_Leg_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.26391643, y: -0.3210461, z: -0.70261693, w: 0.57758725}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.26391643, y: -0.3210461, z: -0.70261693, w: 0.57758725}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:R_Leg_0/DredgeRig_0001:BigRigs:R_Leg_1/DredgeRig_0001:BigRigs:R_Leg_2/DredgeRig_0001:BigRigs:R_Leg_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.040446695, y: 0.9800242, z: 0.006216668, w: -0.19462262}
+        inSlope: {x: -0.0013833046, y: -0.009864807, z: -0.0025470257, w: -0.049196005}
+        outSlope: {x: -0.0013833046, y: -0.009864807, z: -0.0025470257, w: -0.049196005}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: -0.04020263, y: 0.9793029, z: 0.0061341203, w: -0.19827257}
+        inSlope: {x: 0.0006269652, y: 0.0059966925, z: 0.0014626449, w: 0.029535715}
+        outSlope: {x: 0.0006269652, y: 0.0059966925, z: 0.0014626449, w: 0.029535715}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.040446695, y: 0.9800242, z: 0.006216668, w: -0.19462262}
+        inSlope: {x: -0.0014014596, y: -0.00993494, z: -0.002582787, w: -0.050097775}
+        outSlope: {x: -0.0014014596, y: -0.00993494, z: -0.002582787, w: -0.050097775}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:L_Leg_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.024937624, y: -0.35886955, z: 0.0068626828, w: 0.9330293}
+        inSlope: {x: -0.0006560683, y: -0.08446741, z: 0.0016863942, w: -0.03266716}
+        outSlope: {x: -0.0006560683, y: -0.08446741, z: 0.0016863942, w: -0.03266716}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: 0.024972372, y: -0.3545441, z: 0.006776884, w: 0.9346812}
+        inSlope: {x: 0.00036978652, y: 0.045208726, z: -0.0008935092, w: 0.017145362}
+        outSlope: {x: 0.00036978652, y: 0.045208726, z: -0.0008935092, w: 0.017145362}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.024937624, y: -0.35886955, z: 0.0068626828, w: 0.9330293}
+        inSlope: {x: -0.00069089496, y: -0.08626518, z: 0.0017121946, w: -0.03298486}
+        outSlope: {x: -0.00069089496, y: -0.08626518, z: 0.0017121946, w: -0.03298486}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:L_Leg_0/DredgeRig_0001:BigRigs:L_Leg_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.07761319, y: 0.58942384, z: -0.050620638, w: 0.80249196}
+        inSlope: {x: -0.0017094612, y: 0.0324111, z: 0.0029191375, w: -0.02382946}
+        outSlope: {x: -0.0017094612, y: 0.0324111, z: 0.0029191375, w: -0.02382946}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 2.0416667
+        value: {x: -0.07730841, y: 0.58268553, z: -0.051184535, w: 0.8073915}
+        inSlope: {x: 0.00079232303, y: -0.014709922, z: -0.0013232206, w: 0.010607937}
+        outSlope: {x: 0.00079232303, y: -0.014709922, z: -0.0013232206, w: 0.010607937}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.07761319, y: 0.58942384, z: -0.050620638, w: 0.80249196}
+        inSlope: {x: -0.0017244882, y: 0.03317655, z: 0.002982002, w: -0.024301622}
+        outSlope: {x: -0.0017244882, y: 0.03317655, z: 0.002982002, w: -0.024301622}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:L_Leg_0/DredgeRig_0001:BigRigs:L_Leg_1/DredgeRig_0001:BigRigs:L_Leg_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.3210461, y: -0.26391643, z: -0.57758725, w: 0.70261693}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.3210461, y: -0.26391643, z: -0.57758725, w: 0.70261693}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:L_Leg_0/DredgeRig_0001:BigRigs:L_Leg_1/DredgeRig_0001:BigRigs:L_Leg_2/DredgeRig_0001:BigRigs:L_Leg_3
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 1.5802901, z: -0.28540048}
+        inSlope: {x: -0, y: -0.04233328, z: 0.019600347}
+        outSlope: {x: -0, y: -0.04233328, z: 0.019600347}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.9583333
+        value: {x: -0, y: 1.5663072, z: -0.2891496}
+        inSlope: {x: -0, y: 0.0061312476, z: -0.020964786}
+        outSlope: {x: -0, y: 0.0061162417, z: -0.020967264}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3
+        value: {x: -0, y: 1.5964596, z: -0.29738152}
+        inSlope: {x: -0, y: -0.002355778, z: 0.011215274}
+        outSlope: {x: -0, y: -0.0023238652, z: 0.011217127}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 1.5802901, z: -0.28540048}
+        inSlope: {x: -0, y: -0.04281433, z: 0.020264698}
+        outSlope: {x: -0, y: -0.04281433, z: 0.020264698}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0.19257893, z: -0.0004243193}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0.19257893, z: -0.0004243193}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0.14181553, z: -0.00061932456}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0.14181553, z: -0.00061932456}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0.16961356, z: 0.008805205}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0.16961356, z: 0.008805205}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0.4433717, z: 0.08248741}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0.4433717, z: 0.08248741}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0.03623663, z: 0.015292477}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0.03623663, z: 0.015292477}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0.020626212, z: 0.013440158}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0.020626212, z: 0.013440158}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0.016024986, z: 0.02292642}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0.016024986, z: 0.02292642}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0.06960591, z: 0.3067715}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0.06960591, z: 0.3067715}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.069112696, y: 0, z: -0.001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.069112696, y: 0, z: -0.001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0/DredgeRig_0001:BigRigs:CTRL_L_Eye_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.069112696, y: 0, z: -0.001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.069112696, y: 0, z: -0.001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0/DredgeRig_0001:BigRigs:CTRL_R_Eye_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.12893853, y: -0.331311, z: 0.13715312}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.12893853, y: -0.331311, z: 0.13715312}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:CTRL_L_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.128939, y: -0.33131436, z: 0.13715312}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.128939, y: -0.33131436, z: 0.13715312}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:CTRL_R_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.15615757, y: 0.21632631, z: 0.041443653}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.15615757, y: 0.21632631, z: 0.041443653}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.30381808, y: -0.65647537, z: 0.10109899}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.30381808, y: -0.65647537, z: 0.10109899}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_L_Wrist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.16543144, y: -0.3828485, z: 0.14738473}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.16543144, y: -0.3828485, z: 0.14738473}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_L_Wrist_0/DredgeRig_0001:BigRigs:CTRL_L_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.15615757, y: 0.21632631, z: 0.041443653}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.15615757, y: 0.21632631, z: 0.041443653}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.3220527, y: -0.65360785, z: 0.097875364}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.3220527, y: -0.65360785, z: 0.097875364}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_R_Wrist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.16543, y: -0.38284853, z: 0.14738473}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.16543, y: -0.38284853, z: 0.14738473}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_R_Wrist_0/DredgeRig_0001:BigRigs:CTRL_R_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.2617525, y: 0.239209, z: -0.370115}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.2617525, y: 0.239209, z: -0.370115}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_L_Foot_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.2617525, y: 0.239209, z: -0.370115}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.2617525, y: 0.239209, z: -0.370115}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_R_Foot_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.128939, y: 2.1826508, z: 0.18398805}
+        inSlope: {x: 2.6645353e-15, y: -0.045725264, z: 0.05037605}
+        outSlope: {x: 2.6645353e-15, y: -0.045725264, z: 0.05037605}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.875
+        value: {x: 0.128939, y: 2.167092, z: 0.19336122}
+        inSlope: {x: 1.1419432e-15, y: 0.0035859002, z: -0.024889532}
+        outSlope: {x: 2.6645342e-15, y: 0.0035925268, z: -0.024888376}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 2.9583333
+        value: {x: 0.128939, y: 2.2003834, z: 0.15988615}
+        inSlope: {x: 1.1419481e-15, y: -0.00078282243, z: 0.01077463}
+        outSlope: {x: 2.66453e-15, y: -0.0007639841, z: 0.010776236}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.128939, y: 2.1826508, z: 0.18398805}
+        inSlope: {x: 1.1419417e-15, y: -0.046680115, z: 0.0513358}
+        outSlope: {x: 1.1419417e-15, y: -0.046680115, z: 0.0513358}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:IK_R_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.12893853, y: 2.1826541, z: 0.18398838}
+        inSlope: {x: -1.7763568e-15, y: -0.045725264, z: 0.05037723}
+        outSlope: {x: -1.7763568e-15, y: -0.045725264, z: 0.05037723}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.875
+        value: {x: -0.12893853, y: 2.1670954, z: 0.19336149}
+        inSlope: {x: -7.612954e-16, y: 0.0035859002, z: -0.024890708}
+        outSlope: {x: -1.776356e-15, y: 0.0035925268, z: -0.024888376}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 2.9583333
+        value: {x: -0.12893853, y: 2.2003865, z: 0.15988651}
+        inSlope: {x: -7.6129876e-16, y: -0.00077340554, z: 0.010772723}
+        outSlope: {x: -1.7763535e-15, y: -0.00077340094, z: 0.010773424}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.12893853, y: 2.1826541, z: 0.18398838}
+        inSlope: {x: -7.6129437e-16, y: -0.046680115, z: 0.0513358}
+        outSlope: {x: -7.6129437e-16, y: -0.046680115, z: 0.0513358}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:IK_L_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.4599757, y: 1.61359, z: -0.19765802}
+        inSlope: {x: -1.0658141e-14, y: -0.042634096, z: 0.0015918402}
+        outSlope: {x: -1.0658141e-14, y: -0.042634096, z: 0.0015918402}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.875
+        value: {x: -0.4599757, y: 1.5991584, z: -0.20616467}
+        inSlope: {x: -4.567773e-15, y: 0.003201728, z: -0.020939447}
+        outSlope: {x: -1.0658137e-14, y: 0.0032015534, z: -0.0209386}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 2.9583333
+        value: {x: -0.4599757, y: 1.6299872, z: -0.20306373}
+        inSlope: {x: -4.5677925e-15, y: -0.0006115746, z: 0.0104622925}
+        outSlope: {x: -1.065812e-14, y: -0.00061784877, z: 0.010464085}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.4599757, y: 1.61359, z: -0.19765802}
+        inSlope: {x: -4.5677666e-15, y: -0.04312055, z: 0.001636044}
+        outSlope: {x: -4.5677666e-15, y: -0.04312055, z: 0.001636044}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:BigRigs:IK_L_Wrist
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.4782103, y: 1.6172758, z: -0.1999007}
+        inSlope: {x: 3.5527137e-15, y: -0.042524405, z: 0.0017388476}
+        outSlope: {x: 3.5527137e-15, y: -0.042524405, z: 0.0017388476}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.875
+        value: {x: 0.4782103, y: 1.6028756, z: -0.20835482}
+        inSlope: {x: 1.5225909e-15, y: 0.0031806272, z: -0.020952243}
+        outSlope: {x: 3.552712e-15, y: 0.0031898695, z: -0.02095207}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 2.9583333
+        value: {x: 0.4782103, y: 1.6336386, z: -0.20536219}
+        inSlope: {x: 1.5225975e-15, y: -0.0006115746, z: 0.010462554}
+        outSlope: {x: 3.552707e-15, y: -0.0006141867, z: 0.010461033}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.4782103, y: 1.6172758, z: -0.1999007}
+        inSlope: {x: 1.5225887e-15, y: -0.04303772, z: 0.0017816344}
+        outSlope: {x: 1.5225887e-15, y: -0.04303772, z: 0.0017816344}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:BigRigs:IK_R_Wrist
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.2617525, y: 0.239209, z: -0.370115}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.2617525, y: 0.239209, z: -0.370115}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:BigRigs:IK_L_Foot
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.2617525, y: 0.239209, z: -0.370115}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 0.2617525, y: 0.239209, z: -0.370115}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:IK/DredgeRig_0001:BigRigs:IK_R_Foot
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -1.6058549, y: 3.565714e-16, z: 3.5527136e-17}
+        inSlope: {x: 0.045120317, y: -1.6069307e-17, z: -0.011764912}
+        outSlope: {x: 0.045120317, y: -1.6069307e-17, z: -0.011764912}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.041666668
+        value: {x: -1.6039739, y: 3.5590202e-16, z: -0.0004902047}
+        inSlope: {x: 0.0433067, y: -1.5352959e-17, z: -0.011156075}
+        outSlope: {x: 0.043337394, y: -1.5354816e-17, z: -0.011156078}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.7083333
+        value: {x: -1.5913655, y: 3.537771e-16, z: 0.0008237753}
+        inSlope: {x: -0.0007170766, y: 9.67446e-18, z: 0.018523598}
+        outSlope: {x: -0.00072823605, y: 9.677892e-18, z: 0.018523356}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.75
+        value: {x: -1.5914351, y: 3.5421555e-16, z: 0.0016475109}
+        inSlope: {x: -0.002541851, y: 1.1381638e-17, z: 0.02105553}
+        outSlope: {x: -0.0025333061, y: 1.1373429e-17, z: 0.021055484}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.875
+        value: {x: -1.5920553, y: 3.5579852e-16, z: 0.004462169}
+        inSlope: {x: -0.007129774, y: 1.2660182e-17, z: 0.021568982}
+        outSlope: {x: -0.007113032, y: 1.2658401e-17, z: 0.021568948}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 2.9583333
+        value: {x: -1.6240381, y: 3.6541208e-16, z: 0.009354191}
+        inSlope: {x: 0.0025082054, y: -5.8927764e-18, z: -0.010379128}
+        outSlope: {x: 0.0025352207, y: -5.8916973e-18, z: -0.010378575}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -1.6058549, y: 3.565714e-16, z: 3.5527136e-17}
+        inSlope: {x: 0.045728665, y: -1.648646e-17, z: -0.012333933}
+        outSlope: {x: 0.045728665, y: -1.648646e-17, z: -0.012333933}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.1925794, y: 1.6885953e-17, z: -7.105427e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.1925794, y: 1.6885953e-17, z: -7.105427e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.14181688, y: 6.7556953e-18, z: 2.9132252e-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.14181688, y: 6.7556953e-18, z: 2.9132252e-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.16984193, y: -4.300041e-18, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.16984193, y: -4.300041e-18, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.45097965, y: -6.281921e-17, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.45097965, y: -6.281921e-17, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.039331324, y: -1.2215308e-17, z: -5.684342e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.039331324, y: -1.2215308e-17, z: -5.684342e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.024618661, y: -9.01496e-18, z: 5.684342e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.024618661, y: -9.01496e-18, z: 5.684342e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.02797179, y: -1.3524773e-17, z: 5.684342e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.02797179, y: -1.3524773e-17, z: 5.684342e-16}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.22025725, y: -0.15615757, z: -0.0011768759}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.22025725, y: -0.15615757, z: -0.0011768759}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.38549712, y: -0.21142279, z: 0.04852536}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.38549712, y: -0.21142279, z: 0.04852536}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1/DredgeRig_0001:BigRigs:R_Arm_2/DredgeRig_0001:BigRigs:R_Arm_3/DredgeRig_0001:BigRigs:R_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.22025725, y: 0.15615757, z: -0.0011768759}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.22025725, y: 0.15615757, z: -0.0011768759}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.38549694, y: 0.21142422, z: 0.048525352}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: -0.38549694, y: 0.21142422, z: 0.048525352}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1/DredgeRig_0001:BigRigs:L_Arm_2/DredgeRig_0001:BigRigs:L_Arm_3/DredgeRig_0001:BigRigs:L_Index_Finger_0
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0/DredgeRig_0001:BigRigs:CTRL_L_Eye_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:BigRigs:CTRL_Eye_Parent_0/DredgeRig_0001:BigRigs:CTRL_R_Eye_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:CTRL_L_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_Neck_0/DredgeRig_0001:BigRigs:CTRL_Neck_1/DredgeRig_0001:BigRigs:CTRL_Neck_2/DredgeRig_0001:BigRigs:CTRL_Neck_3/DredgeRig_0001:CTRL_R_Ear
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_L_Wrist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_L_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_L_Wrist_0/DredgeRig_0001:BigRigs:CTRL_L_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_R_Wrist_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_Waist_0/DredgeRig_0001:BigRigs:CTRL_Spine_0/DredgeRig_0001:BigRigs:CTRL_Spine_1/DredgeRig_0001:BigRigs:CTRL_Spine_2/DredgeRig_0001:BigRigs:CTRL_R_Shoulder_0/DredgeRig_0001:BigRigs:CTRL_R_Wrist_0/DredgeRig_0001:BigRigs:CTRL_R_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_L_Foot_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:BigRigs:CTRL_Master_0/DredgeRig_0001:BigRigs:CTRL_R_Foot_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:BigRigs:L_Eye_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:Neck_0/DredgeRig_0001:BigRigs:Neck_1/DredgeRig_0001:BigRigs:Neck_2/DredgeRig_0001:BigRigs:Neck_3/DredgeRig_0001:BigRigs:R_Eye_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1/DredgeRig_0001:BigRigs:R_Arm_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1/DredgeRig_0001:BigRigs:R_Arm_2/DredgeRig_0001:BigRigs:R_Arm_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:R_Arm_0/DredgeRig_0001:BigRigs:R_Arm_1/DredgeRig_0001:BigRigs:R_Arm_2/DredgeRig_0001:BigRigs:R_Arm_3/DredgeRig_0001:BigRigs:R_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1/DredgeRig_0001:BigRigs:L_Arm_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1/DredgeRig_0001:BigRigs:L_Arm_2/DredgeRig_0001:BigRigs:L_Arm_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:Spine_0/DredgeRig_0001:BigRigs:Spine_1/DredgeRig_0001:BigRigs:Spine_2/DredgeRig_0001:BigRigs:L_Arm_0/DredgeRig_0001:BigRigs:L_Arm_1/DredgeRig_0001:BigRigs:L_Arm_2/DredgeRig_0001:BigRigs:L_Arm_3/DredgeRig_0001:BigRigs:L_Index_Finger_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:R_Leg_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:R_Leg_0/DredgeRig_0001:BigRigs:R_Leg_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:R_Leg_0/DredgeRig_0001:BigRigs:R_Leg_1/DredgeRig_0001:BigRigs:R_Leg_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:R_Leg_0/DredgeRig_0001:BigRigs:R_Leg_1/DredgeRig_0001:BigRigs:R_Leg_2/DredgeRig_0001:BigRigs:R_Leg_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:L_Leg_0
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:L_Leg_0/DredgeRig_0001:BigRigs:L_Leg_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:L_Leg_0/DredgeRig_0001:BigRigs:L_Leg_1/DredgeRig_0001:BigRigs:L_Leg_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3.75
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DredgeRig_0001:Game/DredgeRig_0001:BigRigs:Root/DredgeRig_0001:BigRigs:Pelvis_0/DredgeRig_0001:BigRigs:L_Leg_0/DredgeRig_0001:BigRigs:L_Leg_1/DredgeRig_0001:BigRigs:L_Leg_2/DredgeRig_0001:BigRigs:L_Leg_3
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 24
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 3.75
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events: []
