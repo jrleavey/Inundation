@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23380
+  m_Name: pb_Mesh23414
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2133,6 +2133,8 @@ PlayableDirector:
     value: {fileID: 707249736}
   - key: {fileID: 1835391799450054250, guid: 48288ead49a0b5e499d5d9b6250c145b, type: 2}
     value: {fileID: 562360293}
+  - key: {fileID: 2000031381599667344, guid: 48288ead49a0b5e499d5d9b6250c145b, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - d3adf7664f587a64f87b94705937eb16: {fileID: 1897528765}
@@ -3198,8 +3200,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300010130}
-  m_LocalRotation: {x: -0, y: -0.6191476, z: -0, w: 0.7852747}
-  m_LocalPosition: {x: 877.0944, y: 3.8972821, z: 369.71094}
+  m_LocalRotation: {x: -0.03819318, y: 0.8610779, z: -0.06540191, w: -0.50280106}
+  m_LocalPosition: {x: 869.2711, y: 2.555273, z: 373.18918}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 138165219}
