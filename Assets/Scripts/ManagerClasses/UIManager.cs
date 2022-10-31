@@ -30,12 +30,12 @@ public class UIManager : MonoBehaviour
 
     public Image _bloodImage;
     public Color _bloodAlpha;
+
     private void Start()
     {
         Instance = this;
         Time.timeScale = 1;
         isTheGamePaused = false;
-        _bloodAlpha = _bloodImage.GetComponent<Color>();
     }
 
     public void PauseMenu()
@@ -121,6 +121,10 @@ public class UIManager : MonoBehaviour
     public void BloodImageVisible()
     {
 
-        _bloodAlpha.a = 1f;
+        //Sprite _bloodImage = GetComponent<Image>().sprite;
+        //SpriteRenderer _bloodImageRenderer = _bloodImage.GetComponent<Sprite>();
+        //_bloodAlpha = _bloodImageRenderer.material.color;
+        //_bloodAlpha.a = 1f;
+        //_bloodImageRenderer.material.color = _bloodAlpha;
     }
 }
