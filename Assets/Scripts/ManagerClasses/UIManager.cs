@@ -27,11 +27,15 @@ public class UIManager : MonoBehaviour
     public PostProcessProfile brightness;
     public PostProcessLayer layer;
     AutoExposure exposure;
+
+    public Image _bloodImage;
+    public Color _bloodAlpha;
     private void Start()
     {
         Instance = this;
         Time.timeScale = 1;
         isTheGamePaused = false;
+        _bloodAlpha = _bloodImage.GetComponent<Color>();
     }
 
     public void PauseMenu()
@@ -112,5 +116,11 @@ public class UIManager : MonoBehaviour
     {
         // SceneManager.LoadScene
         //Load Restart the game
+    }
+
+    public void BloodImageVisible()
+    {
+
+        _bloodAlpha.a = 1f;
     }
 }

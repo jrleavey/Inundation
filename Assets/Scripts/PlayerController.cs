@@ -307,6 +307,7 @@ public class PlayerController : MonoBehaviour
         {
             _currentHealth--;
             CMCameraShake.Instance.ShakeCamera(1f, .5f);
+            UIManager.Instance.BloodImageVisible();
             if (_currentHealth == 0)
             {
                 Die();
