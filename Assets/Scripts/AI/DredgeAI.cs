@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CoreAI : MonoBehaviour
+public class DredgeAI : MonoBehaviour
 {
     private enum AIState
     {
@@ -22,8 +22,11 @@ public class CoreAI : MonoBehaviour
     public float radius = 20f;
     public float angle = 90f;
 
+
     [SerializeField]
     private float _currentHp;
+    [SerializeField]
+    private float _currentPoise;
 
 
     [SerializeField]
@@ -32,6 +35,8 @@ public class CoreAI : MonoBehaviour
     public bool _isChasingPlayer;
     public bool canSeePlayer;
     private bool isDying = false;
+    private bool isStaggered = false;
+    private bool attackRooted = false;
 
 
 
@@ -66,7 +71,8 @@ public class CoreAI : MonoBehaviour
         _anim = GetComponent<Animator>();
         _player = GameObject.Find("Player");
         StartCoroutine(CheckForPlayer());
-        _currentHp = Random.Range(8, 12);
+        _currentHp = Random.Range(12, 20);
+        _currentPoise = Random.Range(6, 12);
     }
     private void Update()
     {
@@ -76,8 +82,8 @@ public class CoreAI : MonoBehaviour
                 Wander();
                 break;
             case AIState.Hostile:
-                StopCoroutine(RandomWaitTimer());
-                ChasePlayer();
+                StopCoroutine(RandomWaitTimer());               
+                ChasePlayer();               
                 break;
             case AIState.Dying:
                 Die();
@@ -87,12 +93,11 @@ public class CoreAI : MonoBehaviour
         if (canSeePlayer == true)
         {
             _AIState = AIState.Hostile;
-            _navMeshAgent.speed = 3;
         }
 
         if (_IAmWaiting == false)
         {
-            _anim.SetBool("isWalking", true);
+            //_anim.SetBool("isWalking", true);
         }
         else
         {
@@ -181,27 +186,45 @@ public class CoreAI : MonoBehaviour
     }
     private void ChasePlayer()
     {
-        if (_navMeshAgent != null)
+        if (_navMeshAgent.isActiveAndEnabled)
         {
             _isChasingPlayer = true;
             _navMeshAgent.destination = _player.transform.position;
 
-            if (_navMeshAgent.remainingDistance < 2f)
+            if (_navMeshAgent.remainingDistance < 3f)
             {
+                attackRooted = true;
+                StartCoroutine(AttackRootTimer());
+                _navMeshAgent.speed = 0;
                 _anim.SetBool("isAttacking", true);
                 _hitboxes[0].SetActive(true);
             }
-            else
+            else if (_navMeshAgent.remainingDistance > 3f)
             {
                 _anim.SetBool("isAttacking", false);
                 _hitboxes[0].SetActive(false);
 
             }
+
+            if (_navMeshAgent.remainingDistance > 10f && _AIState == AIState.Hostile && isStaggered == false && attackRooted == false)
+            {
+                _navMeshAgent.speed = 8;
+                _anim.SetBool("isRunning", true);
+                _anim.SetBool("isWalking", false);
+            }
+            else if (_navMeshAgent.remainingDistance < 10f && _AIState == AIState.Hostile && isStaggered == false && attackRooted == false|| _AIState == AIState.Passive || _AIState == AIState.Dying)
+            {
+               
+                _navMeshAgent.speed = 5;
+                _anim.SetBool("isRunning", false);
+                _anim.SetBool("isWalking", true);
+            }
         }
     }
-    private void Damage()
+    private void Damage(int gundamage)
     {
-        _currentHp--;
+        _currentHp -= gundamage;
+        _currentPoise -= Random.Range(1, 3);
         if (_currentHp >= 1)
         {
             _AIState = AIState.Hostile;
@@ -211,8 +234,26 @@ public class CoreAI : MonoBehaviour
             _AIState = AIState.Dying;
         }
 
+        if (_currentPoise <= 0)
+        {
+            StartCoroutine(Stagger());
+        }
+
+    }
+    private IEnumerator Stagger()
+    {
+        isStaggered = true;
+        _anim.SetBool("isRunning", false);
+        _anim.SetBool("isWalking", false);
+        _anim.SetTrigger("Stagger");
+        _navMeshAgent.speed = 0;
+        yield return new WaitForSeconds(2f);
+        isStaggered = false;
+        _anim.ResetTrigger("Stagger");
+        _currentPoise = Random.Range(6, 12);
     }
     private void Die()
+
     {
         if (_currentHp <= 0)
         {
@@ -228,5 +269,10 @@ public class CoreAI : MonoBehaviour
         isDying = true;
         yield return new WaitForSeconds(1.5f);
         Destroy(this.gameObject);
+    }
+    private IEnumerator AttackRootTimer()
+    {
+        yield return new WaitForSeconds(1f);
+        attackRooted = false;
     }
 }

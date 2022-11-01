@@ -28,14 +28,33 @@ public class UIManager : MonoBehaviour
     public PostProcessLayer layer;
     AutoExposure exposure;
 
-    public Image _bloodImage;
+    public GameObject _bloodImage;
     public Color _bloodAlpha;
+
+    private GameObject _player;
+
+    [SerializeField]
+    private GameObject handgunUI;
+    [SerializeField]
+    private GameObject ShotgunUI;
+    [SerializeField]
+    private GameObject RifleUI;
+    [SerializeField]
+    private Text handgunUIText;
+    [SerializeField]
+    private Text ShotgunUIText;
+    [SerializeField]
+    private Text RifleUIText;
+
+    [SerializeField]
+    private Text[] _ammoAmounts;
 
     private void Start()
     {
         Instance = this;
         Time.timeScale = 1;
         isTheGamePaused = false;
+        _player = GameObject.Find("Player");
     }
 
     public void PauseMenu()
@@ -54,7 +73,6 @@ public class UIManager : MonoBehaviour
         {
             Time.timeScale = 1;
             _pausemenu.SetActive(false);
-
         }
     }
     public void Resume()
@@ -120,11 +138,69 @@ public class UIManager : MonoBehaviour
 
     public void BloodImageVisible()
     {
+        float height = Screen.height * .75f;
+        float width = Screen.width * .75f;
 
-        //Sprite _bloodImage = GetComponent<Image>().sprite;
-        //SpriteRenderer _bloodImageRenderer = _bloodImage.GetComponent<Sprite>();
-        //_bloodAlpha = _bloodImageRenderer.material.color;
-        //_bloodAlpha.a = 1f;
-        //_bloodImageRenderer.material.color = _bloodAlpha;
+        float randomHeight = Random.Range(height * -1, height);
+        float randomWidth = Random.Range(width * -1, width);
+
+        GameObject image = Instantiate(_bloodImage, Vector3.zero, Quaternion.identity, this.transform);
+
+        image.transform.localPosition = new Vector3(randomWidth, randomHeight, 0);
+
+
+        // New script
+        // Start 255
+        //animation fades it to 0 over X time
+        // Destroy after X seconds
     }
+
+    public void UseRevolver()
+    {
+        _player.GetComponent<PlayerController>().SwapToRevolver();
+        ShotgunUI.SetActive(false);
+        RifleUI.SetActive(false);
+        handgunUI.SetActive(true);
+
+        PauseMenu();
+    }
+    public void UseShotgun()
+    {
+        _player.GetComponent<PlayerController>().SwapToShotgun();
+        handgunUI.SetActive(false);
+        RifleUI.SetActive(false);
+        ShotgunUI.SetActive(true);
+
+        PauseMenu();
+
+    }
+    public void UseRifle()
+    {
+        _player.GetComponent<PlayerController>().SwapToRifle();
+        handgunUI.SetActive(false);
+        ShotgunUI.SetActive(false);
+        RifleUI.SetActive(true);
+
+        PauseMenu();
+    }
+    public void UpdateRevolverAmmo(int currentammo)
+    {
+        handgunUIText.text = "" + currentammo;
+    }
+    public void UpdateShotgunAmmo(int currentammo)
+    {
+        ShotgunUIText.text = "" + currentammo;
+    }
+    public void UpdateRifleAmmo(int currentammo)
+    {
+        RifleUIText.text = "" + currentammo;
+    }
+    public void UpdateAmmoReserves(int handgunAmmo, int Shotgunammo, int rifleammo)
+    {
+        _ammoAmounts[0].text = "" + handgunAmmo;
+        _ammoAmounts[1].text = "" + Shotgunammo;
+        _ammoAmounts[2].text = "" + rifleammo;
+
+    }
+
 }
