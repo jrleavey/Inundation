@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     private int smgAmmo;
     [SerializeField]
     private int rifleAmmo;
+    [SerializeField]
+    private int healthKits;
 
     [SerializeField]
     private int magazineCapacity = 6;
@@ -34,7 +36,7 @@ public class PlayerController : MonoBehaviour
     private int currentAmmo = 6;
 
     [SerializeField]
-    private int _currentHealth = 5;
+    private int _currentHealth;
 
 
     [SerializeField]
@@ -61,6 +63,7 @@ public class PlayerController : MonoBehaviour
     private bool aButton;
     [SerializeField]
     public bool isInvincible = false;
+    private bool didIPause = false;
 
 
     [SerializeField]
@@ -86,6 +89,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] ParticleSystem handgunEffect;
     [SerializeField] ParticleSystem rifleEffect;
 
+    
+
+    [SerializeField]
+    private GameObject _footStepHolder;
+
 
     private void Awake()
     {
@@ -93,7 +101,8 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-        _currentHealth = 3;
+        _currentHealth = 4;
+        _speed = 5;
         _playerControls = new PlayerControls();
         _playerControls.Controller.Enable();
         InputSetup();
@@ -103,6 +112,14 @@ public class PlayerController : MonoBehaviour
     {
         MovementController();
         WeaponControls();
+        if (isMoving == true && didIPause == false)
+        {
+            _footStepHolder.SetActive(true);
+        }
+        else
+        {
+            _footStepHolder.SetActive(false);
+        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -128,6 +145,16 @@ public class PlayerController : MonoBehaviour
 
 
         transform.Translate(leftStick.x * Time.deltaTime * _speed, 0, leftStick.y * Time.deltaTime * _speed);
+        if (leftStick.x > .05 || leftStick.x < -.05 ||leftStick.y > .05 || leftStick.y < -.05)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
+
+     
 
 
     }
@@ -152,28 +179,37 @@ public class PlayerController : MonoBehaviour
     
     public void PickedUpItem(int _itemID)
     {
-        switch (_itemID)
+        if (didIPause == false)
         {
-            case 0: // Handgun Bullets
-                handgunAmmo += 10;
-                Debug.Log("+10 Handgun Ammo");
-                break;
-            case 1: // Shotgun Bullets
-                shotgunAmmo += 5;
-                Debug.Log("+5 Shotgun Ammo");
-                break;
-            case 2: // SMG Bullets
-                smgAmmo += 50;
-                Debug.Log("+50 SMG Ammo");
-                break;
-            case 3: // Rifle Bullets
-                rifleAmmo += 4;
-                Debug.Log("+3 Rifle Ammo");
-                break;
-            case 4: // Health
-                Debug.Log("This is health");
-                break;
-        }
+            switch (_itemID)
+            {
+                case 0: // Handgun Bullets
+                    handgunAmmo += 10;
+                    AudioManager.Instance.Play("PickupAmmo");
+                    break;
+                case 1: // Shotgun Bullets
+                    shotgunAmmo += 5;
+                    AudioManager.Instance.Play("PickupAmmo");
+
+                    break;
+                case 2: // SMG Bullets
+                        //NOT USED
+                    smgAmmo += 50;
+
+                    break;
+                case 3: // Rifle Bullets
+                    rifleAmmo += 4;
+                    AudioManager.Instance.Play("PickupAmmo");
+
+                    break;
+                case 4: // Health
+                    healthKits++;
+                    AudioManager.Instance.Play("PickupHealth");
+
+                    break;
+            }
+            UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo, healthKits);
+        }      
     }
 
     private void PistolLogic()
@@ -186,6 +222,7 @@ public class PlayerController : MonoBehaviour
         {
             handgunEffect.Play();
             currentAmmo--;
+            AudioManager.Instance.Play("Revolver Shoot");
             UIManager.Instance.UpdateRevolverAmmo(currentAmmo);
             _revolverAnim.SetTrigger("Shoot");
             StartCoroutine(FireAnimTimers());
@@ -203,6 +240,14 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        else if (isAiming == true && aButton == true && currentAmmo == 0 && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            AudioManager.Instance.Play("Out of Ammo");
+           return;
+
+            
+        }
     }
     private void ShotgunLogic()
     {
@@ -214,6 +259,7 @@ public class PlayerController : MonoBehaviour
         {
             shotgunffect.Play();
             currentAmmo--;
+            AudioManager.Instance.Play("Shotgun Shoot");
             UIManager.Instance.UpdateShotgunAmmo(currentAmmo);
             _shotgunAnim.SetTrigger("Shoot");
             StartCoroutine(FireAnimTimers());
@@ -224,6 +270,14 @@ public class PlayerController : MonoBehaviour
             {
                 ShotgunRay();
             }
+        }
+        else if (isAiming == true && aButton == true && currentAmmo == 0 && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            AudioManager.Instance.Play("Out of Ammo");
+            return;
+
+
         }
     }
     private void ShotgunRay()
@@ -286,13 +340,14 @@ public class PlayerController : MonoBehaviour
     private void RifleLogic()
     {
         magazineCapacity = 4;
-        reloadtime = 4f;
+        reloadtime = 6f;
         fireRate = 3f;
         gunDamage = Random.Range(8, 16);
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire && isReloading == false)
         {
             handgunEffect.Play();
             currentAmmo--;
+            AudioManager.Instance.Play("Rifle Shoot");
             UIManager.Instance.UpdateRifleAmmo(currentAmmo);
             _rifleAnim.SetTrigger("Shoot");
             StartCoroutine(FireAnimTimers());
@@ -310,6 +365,14 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        else if (isAiming == true && aButton == true && currentAmmo == 0 && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            AudioManager.Instance.Play("Out of Ammo");
+            return;
+
+
+        }
     }
 
     public void TakeDamage()
@@ -320,33 +383,52 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            if (_currentHealth != 1)
+            {
+                AudioManager.Instance.Play("PlayerDamage");
+            }
             _currentHealth--;
+            _speed = 7;
+            StartCoroutine(BecomeInvincible());
             CMCameraShake.Instance.ShakeCamera(1f, .5f);
             UIManager.Instance.BloodImageVisible();
+            UIManager.Instance.UpdateHealth(_currentHealth);
             if (_currentHealth == 0)
             {
                 Die();
                 return;
             }
-            StartCoroutine(BecomeInvincible());
+            isInvincible = true;
         }
     }
     private IEnumerator BecomeInvincible()
     {
-        isInvincible = true;
-
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2.5f);
         isInvincible = false;
+        _speed = 5;
     }
     public void Heal()
     {
-
-        _currentHealth++;
+        if (healthKits == 0 || _currentHealth >= 4)
+        {
+            return;
+        }
+        else if (healthKits >= 1)
+        {
+            healthKits--;
+            _currentHealth+= 2;
+            if (_currentHealth > 4)
+            {
+                _currentHealth = 4;
+            }
+            AudioManager.Instance.Play("Heal");
+            UIManager.Instance.UpdateHealth(_currentHealth);
+        }
     }
     public void Die()
     {
-        // Play sound effect
-        //Open Game Over Screen
+        AudioManager.Instance.Play("PlayerDeath");
+        UIManager.Instance.Die();
     }
     private void InputSetup()
     {
@@ -399,6 +481,7 @@ public class PlayerController : MonoBehaviour
                 if (currentAmmo != 6 && handgunAmmo >= 1)
                 {
                     isReloading = true;
+                    AudioManager.Instance.Play("Revolver Reload");
                     _revolverAnim.SetBool("isReloading", true);
                     StartCoroutine(ReloadTimers());
                 }
@@ -407,6 +490,7 @@ public class PlayerController : MonoBehaviour
                 if (currentAmmo != 5 && shotgunAmmo >= 1)
                 {
                     isReloading = true;
+                    AudioManager.Instance.Play("Shotgun Reload");
                     _shotgunAnim.SetBool("isReloading", true);
                     StartCoroutine(ReloadTimers());
                 }
@@ -420,9 +504,10 @@ public class PlayerController : MonoBehaviour
                 }
                 break;
             case ActiveWeapon.Rifle: // Rifle
-                if (currentAmmo != 4)
+                if (currentAmmo != 4 && rifleAmmo >= 0)
                 {
                     isReloading = true;
+                    AudioManager.Instance.Play("Rifle Reload");
                     _rifleAnim.SetBool("isReloading", true);
                     StartCoroutine(ReloadTimers());
                 }
@@ -456,7 +541,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Menu_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        
+        didIPause = !didIPause;
             UIManager.Instance.GetComponent<UIManager>().PauseMenu();
             UpdateAmmoReserves();
         
@@ -471,7 +556,7 @@ public class PlayerController : MonoBehaviour
                 missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
                 yield return new WaitForSeconds(reloadtime);
                 _revolverAnim.SetBool("isReloading", false);
-                if (handgunAmmo >= magazineCapacity)
+                if ( currentAmmo + handgunAmmo >= magazineCapacity)
                 {
                     currentAmmo = magazineCapacity;
                     handgunAmmo -= missingbullets;
@@ -489,7 +574,7 @@ public class PlayerController : MonoBehaviour
                 missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
                 yield return new WaitForSeconds(reloadtime);
                 _shotgunAnim.SetBool("isReloading", false);
-                if (shotgunAmmo >= magazineCapacity)
+                if (currentAmmo + shotgunAmmo >= magazineCapacity)
                 {
                     currentAmmo = magazineCapacity;
                     shotgunAmmo -= missingbullets;
@@ -511,7 +596,7 @@ public class PlayerController : MonoBehaviour
                 missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
                 yield return new WaitForSeconds(reloadtime);
                 _rifleAnim.SetBool("isReloading", false);
-                if (rifleAmmo >= magazineCapacity)
+                if (currentAmmo + rifleAmmo >= magazineCapacity)
                 {
                     currentAmmo = magazineCapacity;
                     rifleAmmo -= missingbullets;
@@ -561,6 +646,10 @@ public class PlayerController : MonoBehaviour
         {
             rifleAmmo += currentAmmo;
         }
+        else if ((_ActiveWeapon == ActiveWeapon.Handgun))
+        {
+            handgunAmmo += currentAmmo;
+        }
 
 
         if (handgunAmmo >= 6)
@@ -590,6 +679,10 @@ public class PlayerController : MonoBehaviour
         if (_ActiveWeapon == ActiveWeapon.Handgun)
         {
             handgunAmmo += currentAmmo;
+        }
+        else if (_ActiveWeapon == ActiveWeapon.Shotgun)
+        {
+            shotgunAmmo += currentAmmo;
         }
         else if (_ActiveWeapon == ActiveWeapon.Rifle)
         {
@@ -632,6 +725,10 @@ public class PlayerController : MonoBehaviour
         {
             shotgunAmmo += currentAmmo;
         }
+        else if (_ActiveWeapon == ActiveWeapon.Rifle)
+        {
+            rifleAmmo += currentAmmo;
+        }
 
 
         if (rifleAmmo >= 4)
@@ -653,7 +750,26 @@ public class PlayerController : MonoBehaviour
     }
     public void UpdateAmmoReserves()
     {
-        UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo);
+        UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo, healthKits);
+    }
+   
+    public void UnpauseConsistency()
+    {
+        didIPause = false;
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Pickup")
+        {
+
+            if (aButton == true && isAiming == false)
+            {
+                other.GetComponent<PickUp>().ItemLogic();
+                Destroy(other.gameObject);
+                UIManager.Instance.ClearPickupPrompt();
+            }
+        }
     }
 }
 

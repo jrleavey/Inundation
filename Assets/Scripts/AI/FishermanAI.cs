@@ -37,10 +37,14 @@ public class FishermanAI : MonoBehaviour
     private bool isDying = false;
     private bool isStaggered = false;
     private bool attackRooted = false;
+    private bool canPlayAttackSound = true;
+    private bool canPlayDeathSound = true;
 
 
 
     public GameObject _player;
+    public GameObject axePrefab;
+    public Transform _axeSpawnLocation;
 
 
     [SerializeField]
@@ -55,6 +59,11 @@ public class FishermanAI : MonoBehaviour
     [SerializeField]
     private GameObject[] _hitboxes;
     private BoxCollider _boxcollider;
+
+
+
+    [SerializeField]
+    private AudioClip[] _audioclips;
 
 
     [Range(0, 500)] public float walkRadius;
@@ -82,6 +91,7 @@ public class FishermanAI : MonoBehaviour
                 Wander();
                 break;
             case AIState.Hostile:
+                _IAmWaiting = false;
                 StopCoroutine(RandomWaitTimer());               
                 ChasePlayer();               
                 break;
@@ -97,11 +107,7 @@ public class FishermanAI : MonoBehaviour
 
         if (_IAmWaiting == false)
         {
-            //_anim.SetBool("isWalking", true);
-        }
-        else
-        {
-            _anim.SetBool("isWalking", false);
+            _anim.SetBool("isWalking", true);
         }
 
         if (_IAmWaiting == true)
@@ -192,20 +198,28 @@ public class FishermanAI : MonoBehaviour
             _isChasingPlayer = true;
             _navMeshAgent.destination = _player.transform.position;
 
-            if (_navMeshAgent.remainingDistance < 3f)
+            if (_navMeshAgent.remainingDistance < 2f)
             {
                 attackRooted = true;
-                StartCoroutine(AttackRootTimer());
                 _navMeshAgent.speed = 0;
+                StartCoroutine(AttackRootTimer());
+                if (canPlayAttackSound == true)
+                {
+                    AudioSource.PlayClipAtPoint(_audioclips[0], transform.position);
+                    canPlayAttackSound = false;
+                    StartCoroutine(SoundTimer());
+                }
                 _anim.SetBool("isAttacking", true);
                 _hitboxes[0].SetActive(true);
             }
-            else if (_navMeshAgent.remainingDistance > 3f)
+            else if (_navMeshAgent.remainingDistance > 2f)
             {
-
+                if (attackRooted == false)
+                {
+                    _navMeshAgent.speed = 4.5f;
+                }
                 _anim.SetBool("isAttacking", false);
                 _hitboxes[0].SetActive(false);
-
             }
 
             if (_navMeshAgent.remainingDistance > 10f && _AIState == AIState.Hostile && isStaggered == false && attackRooted == false)
@@ -226,6 +240,7 @@ public class FishermanAI : MonoBehaviour
     private void Damage(int gundamage)
     {
         _currentHp-= gundamage;
+        AudioSource.PlayClipAtPoint(_audioclips[1], transform.position);
         _currentPoise -= Random.Range(1, 3);
         if (_currentHp >= 1)
         {
@@ -249,6 +264,7 @@ public class FishermanAI : MonoBehaviour
         _anim.SetBool("isWalking", false);
         _anim.SetTrigger("Stagger");
         _navMeshAgent.speed = 0;
+        AudioSource.PlayClipAtPoint(_audioclips[2], transform.position);
         yield return new WaitForSeconds(2f);
         isStaggered = false;
         _anim.ResetTrigger("Stagger");
@@ -259,6 +275,11 @@ public class FishermanAI : MonoBehaviour
     {
         if (_currentHp <= 0)
         {
+            if (canPlayDeathSound == true)
+            {
+                AudioSource.PlayClipAtPoint(_audioclips[3], transform.position);
+                canPlayDeathSound = false;
+            }
             _boxcollider.enabled = false;
             _navMeshAgent.enabled = false;
             _anim.SetTrigger("Die");
@@ -274,7 +295,30 @@ public class FishermanAI : MonoBehaviour
     }
     private IEnumerator AttackRootTimer()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         attackRooted = false;
+    }
+    private void ThrowAxe()
+    {
+        //RaycastHit hit;
+        //if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity))
+        //{
+        //    Vector3 direction = transform.forward;
+        //    Vector3 spread = Vector3.zero;
+        //    spread += transform.up * Random.Range(-.05f, .05f);
+        //    spread += transform.right * Random.Range(-.05f, .05f);
+        //    direction += spread.normalized * Random.Range(0f, 0.2f);
+        //    if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity))
+        //    {
+        //        Debug.DrawLine(transform.position, hit.point, Color.cyan, 1f);
+        //    }
+        //}
+
+        //Instantiate(axePrefab, _axeSpawnLocation.position, Quaternion.identity, _axeSpawnLocation.transform);
+    }
+    private IEnumerator SoundTimer()
+    {
+        yield return new WaitForSeconds(3f);
+        canPlayAttackSound = true;
     }
 }

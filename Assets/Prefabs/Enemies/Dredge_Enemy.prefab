@@ -2917,9 +2917,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7955996622637053443}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000035762784}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.1, y: -0.044, z: 7.2}
-  m_LocalScale: {x: 1.21, y: 1.21, z: 1.21}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children:
   - {fileID: 5805220551770919520}
   - {fileID: 1531349191726264138}
@@ -2977,6 +2977,12 @@ MonoBehaviour:
   _hitboxes:
   - {fileID: 7972880173698485305}
   - {fileID: 7972880173917693249}
+  _audioclips:
+  - {fileID: 8300000, guid: bf091c55c118d404ea1ecddb8864f61e, type: 3}
+  - {fileID: 8300000, guid: f4b5d57be6b3f8a4b9dac465d0dab77d, type: 3}
+  - {fileID: 8300000, guid: 5880a95048735744fa26b35601d18fd1, type: 3}
+  - {fileID: 8300000, guid: be8014f77e04cb34082f97a9ae9e0b32, type: 3}
+  - {fileID: 8300000, guid: 68f95074680c1c840a284cbd775c2fa9, type: 3}
   walkRadius: 5
 --- !u!195 &7955996622637053446
 NavMeshAgent:
@@ -2989,9 +2995,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 100
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 200
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -3010,11 +3016,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 29b5420b2b1da424d966272ace5466bf, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 0.148
+  m_Pitch: -0.61
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3056,7 +3062,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3203,8 +3209,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.1868702, y: 1.2548282, z: 1.2312227}
+  m_Center: {x: -0.093435064, y: -0.12741399, z: 0.11561198}
 --- !u!114 &7972880173698485308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,6 +3223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9ef067cf4c3a748852766de7909712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _parent: {fileID: 0}
 --- !u!1 &7972880173917693249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3311,8 +3318,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.1868702, y: 1.2548282, z: 1.2312227}
+  m_Center: {x: -0.093435064, y: -0.12741399, z: 0.11561198}
 --- !u!114 &7972880173917693252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3325,6 +3332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9ef067cf4c3a748852766de7909712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _parent: {fileID: 0}
 --- !u!1 &8162837751509989489
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,6 +48,14 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     private Text[] _ammoAmounts;
+    [SerializeField]
+    private GameObject[] _healthStates;
+
+    [SerializeField]
+    private Text _pickupItemText;
+
+    [SerializeField]
+    private GameObject _deathScreen;
 
     private void Start()
     {
@@ -77,9 +85,9 @@ public class UIManager : MonoBehaviour
     }
     public void Resume()
     {
-        Time.timeScale = 1;
-        _pausemenu.SetActive(false);
-    }    
+        PauseMenu();
+        _player.GetComponent<PlayerController>().UnpauseConsistency();
+    }
     private void Update()
     {
         
@@ -147,12 +155,6 @@ public class UIManager : MonoBehaviour
         GameObject image = Instantiate(_bloodImage, Vector3.zero, Quaternion.identity, this.transform);
 
         image.transform.localPosition = new Vector3(randomWidth, randomHeight, 0);
-
-
-        // New script
-        // Start 255
-        //animation fades it to 0 over X time
-        // Destroy after X seconds
     }
 
     public void UseRevolver()
@@ -162,7 +164,10 @@ public class UIManager : MonoBehaviour
         RifleUI.SetActive(false);
         handgunUI.SetActive(true);
 
+        AudioManager.Instance.Play("Equip");
         PauseMenu();
+        _player.GetComponent<PlayerController>().UnpauseConsistency();
+
     }
     public void UseShotgun()
     {
@@ -171,7 +176,9 @@ public class UIManager : MonoBehaviour
         RifleUI.SetActive(false);
         ShotgunUI.SetActive(true);
 
+        AudioManager.Instance.Play("Equip");
         PauseMenu();
+        _player.GetComponent<PlayerController>().UnpauseConsistency();
 
     }
     public void UseRifle()
@@ -181,7 +188,18 @@ public class UIManager : MonoBehaviour
         ShotgunUI.SetActive(false);
         RifleUI.SetActive(true);
 
+        AudioManager.Instance.Play("Equip");
+
         PauseMenu();
+        _player.GetComponent<PlayerController>().UnpauseConsistency();
+
+    }
+    public void UseHealthkit()
+    {
+        _player.GetComponent<PlayerController>().Heal();
+        PauseMenu();
+        _player.GetComponent<PlayerController>().UnpauseConsistency();
+
     }
     public void UpdateRevolverAmmo(int currentammo)
     {
@@ -195,12 +213,76 @@ public class UIManager : MonoBehaviour
     {
         RifleUIText.text = "" + currentammo;
     }
-    public void UpdateAmmoReserves(int handgunAmmo, int Shotgunammo, int rifleammo)
+    public void UpdateAmmoReserves(int handgunAmmo, int Shotgunammo, int rifleammo, int healthkits)
     {
         _ammoAmounts[0].text = "" + handgunAmmo;
         _ammoAmounts[1].text = "" + Shotgunammo;
         _ammoAmounts[2].text = "" + rifleammo;
+        _ammoAmounts[3].text = "" + healthkits;
 
     }
+    public void UpdateHealth(int currenthealth)
+    {
+        switch(currenthealth)
+        {
+            case 1:
+                _healthStates[0].SetActive(true);
+                _healthStates[1].SetActive(false);
+                _healthStates[2].SetActive(false);
+                _healthStates[3].SetActive(false);
+                break;
+            case 2:
+                _healthStates[0].SetActive(false);
+                _healthStates[1].SetActive(true);
+                _healthStates[2].SetActive(false);
+                _healthStates[3].SetActive(false);
+                break;
+            case 3:
+                _healthStates[0].SetActive(false);
+                _healthStates[1].SetActive(false);
+                _healthStates[2].SetActive(true);
+                _healthStates[3].SetActive(false);
+                break;
+            case 4:
+                _healthStates[0].SetActive(false);
+                _healthStates[1].SetActive(false);
+                _healthStates[2].SetActive(false);
+                _healthStates[3].SetActive(true);
+                break;
+        }
+    }
+    public void Die()
+    {
+        GameObject blood = GameObject.FindGameObjectWithTag("Blood");
+        Destroy(blood.gameObject);
+        _deathScreen.SetActive(true);
+        Time.timeScale = 0;
+        isTheGamePaused = true;
 
+    }
+    public void PickupItemPrompt(int itemID)
+    {
+        switch (itemID)
+        {
+            case 0:
+                _pickupItemText.text = "Take the Revolver Ammo?";
+                break;
+            case 1:
+                _pickupItemText.text = "Take the Shotgun Ammo?";
+                break;
+            case 2:
+                _pickupItemText.text = "Take the SMG Ammo?";
+                break;
+            case 3:
+                _pickupItemText.text = "Take the Rifle Ammo?";
+                break;
+            case 4:
+                _pickupItemText.text = "Take the Health Kit?";
+                break;
+        }
+    }
+    public void ClearPickupPrompt()
+    {
+        _pickupItemText.text = "";
+    }
 }

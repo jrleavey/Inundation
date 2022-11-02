@@ -37,8 +37,9 @@ public class DredgeAI : MonoBehaviour
     private bool isDying = false;
     private bool isStaggered = false;
     private bool attackRooted = false;
-
-
+    private bool isRoared;
+    private bool canPlayAttackSound = true;
+    private bool canPlayDeathSound = true;
 
     public GameObject _player;
 
@@ -55,6 +56,9 @@ public class DredgeAI : MonoBehaviour
     [SerializeField]
     private GameObject[] _hitboxes;
     private BoxCollider _boxcollider;
+
+    [SerializeField]
+    private AudioClip[] _audioclips;
 
 
     [Range(0, 500)] public float walkRadius;
@@ -93,17 +97,17 @@ public class DredgeAI : MonoBehaviour
         if (canSeePlayer == true)
         {
             _AIState = AIState.Hostile;
+            if (isRoared == false)
+            {
+                AudioSource.PlayClipAtPoint(_audioclips[0], transform.position);
+                isRoared = true;
+            }
         }
 
         if (_IAmWaiting == false)
         {
-            //_anim.SetBool("isWalking", true);
+            _anim.SetBool("isWalking", true);
         }
-        else
-        {
-            _anim.SetBool("isWalking", false);
-        }
-
         if (_IAmWaiting == true)
         {
             _anim.SetBool("isWalking", false);
@@ -191,18 +195,30 @@ public class DredgeAI : MonoBehaviour
             _isChasingPlayer = true;
             _navMeshAgent.destination = _player.transform.position;
 
-            if (_navMeshAgent.remainingDistance < 3f)
+            if (_navMeshAgent.remainingDistance < 2f)
             {
                 attackRooted = true;
                 StartCoroutine(AttackRootTimer());
                 _navMeshAgent.speed = 0;
                 _anim.SetBool("isAttacking", true);
                 _hitboxes[0].SetActive(true);
+                _hitboxes[1].SetActive(true);
+                if (canPlayAttackSound == true)
+                {
+                    AudioSource.PlayClipAtPoint(_audioclips[1], transform.position);
+                    canPlayAttackSound = false;
+                    StartCoroutine(SoundTimer());
+                }
             }
-            else if (_navMeshAgent.remainingDistance > 3f)
+            else if (_navMeshAgent.remainingDistance > 2f)
             {
+                if (attackRooted == false && isStaggered == false)
+                {
+                    _navMeshAgent.speed = 5.5f;
+                }
                 _anim.SetBool("isAttacking", false);
                 _hitboxes[0].SetActive(false);
+                _hitboxes[1].SetActive(false);
 
             }
 
@@ -215,7 +231,7 @@ public class DredgeAI : MonoBehaviour
             else if (_navMeshAgent.remainingDistance < 10f && _AIState == AIState.Hostile && isStaggered == false && attackRooted == false|| _AIState == AIState.Passive || _AIState == AIState.Dying)
             {
                
-                _navMeshAgent.speed = 5;
+                _navMeshAgent.speed = 5.5f;
                 _anim.SetBool("isRunning", false);
                 _anim.SetBool("isWalking", true);
             }
@@ -224,8 +240,10 @@ public class DredgeAI : MonoBehaviour
     private void Damage(int gundamage)
     {
         _currentHp -= gundamage;
+        AudioSource.PlayClipAtPoint(_audioclips[2], transform.position);
+
         _currentPoise -= Random.Range(1, 3);
-        if (_currentHp >= 1)
+        if (_currentHp >= 1 && _AIState == AIState.Passive)
         {
             _AIState = AIState.Hostile;
         }
@@ -247,6 +265,8 @@ public class DredgeAI : MonoBehaviour
         _anim.SetBool("isWalking", false);
         _anim.SetTrigger("Stagger");
         _navMeshAgent.speed = 0;
+        AudioSource.PlayClipAtPoint(_audioclips[3], transform.position);
+
         yield return new WaitForSeconds(2f);
         isStaggered = false;
         _anim.ResetTrigger("Stagger");
@@ -257,6 +277,12 @@ public class DredgeAI : MonoBehaviour
     {
         if (_currentHp <= 0)
         {
+            if (canPlayDeathSound == true)
+            {
+                AudioSource.PlayClipAtPoint(_audioclips[4], transform.position);
+                canPlayDeathSound = false;
+            }
+
             _boxcollider.enabled = false;
             _navMeshAgent.enabled = false;
             _anim.SetTrigger("Die");
@@ -274,5 +300,10 @@ public class DredgeAI : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         attackRooted = false;
+    }
+    private IEnumerator SoundTimer()
+    {
+        yield return new WaitForSeconds(2f);
+        canPlayAttackSound = true;
     }
 }

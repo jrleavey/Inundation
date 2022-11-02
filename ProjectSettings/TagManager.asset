@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Pickup
+  - Throwable
+  - Blood
   layers:
   - Default
   - TransparentFX

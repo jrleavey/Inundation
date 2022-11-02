@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &514943652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514943653}
+  m_Layer: 0
+  m_Name: AxeSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514943653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514943652}
+  m_LocalRotation: {x: -0.6514674, y: 0.047736555, z: 0.30115888, w: 0.69470483}
+  m_LocalPosition: {x: 0.37572098, y: 2.4685853, z: 2.3475103}
+  m_LocalScale: {x: 2.108, y: 2.108, z: 2.1080008}
+  m_Children: []
+  m_Father: {fileID: 5173836396169433084}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -2.587, y: 6.35, z: -0.98}
 --- !u!1 &1595044308
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,8 +73,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.34895498, y: 0.45160422, z: 0.5112761}
-  m_Center: {x: 0.04889402, y: 0.02404557, z: 0.4009548}
+  m_Size: {x: 0.34895498, y: 0.3269515, z: 0.28015402}
+  m_Center: {x: 0.046939198, y: -0.035215992, z: 0.28671795}
 --- !u!114 &1595044310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,6 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9ef067cf4c3a748852766de7909712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _parent: {fileID: 0}
 --- !u!1 &39044761403965208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,6 +2428,7 @@ Transform:
   - {fileID: 9062871040174052025}
   - {fileID: 3830213246104874709}
   - {fileID: 7797801808089431526}
+  - {fileID: 514943653}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2510,7 +2542,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2571,15 +2603,22 @@ MonoBehaviour:
   _isChasingPlayer: 0
   canSeePlayer: 0
   _player: {fileID: 0}
-  _audioSource: {fileID: 0}
+  axePrefab: {fileID: 8751136057709552323, guid: a49559214b34d794fb66c0e3e1e32050, type: 3}
+  _axeSpawnLocation: {fileID: 514943653}
+  _audioSource: {fileID: 5596485330032204834}
   targetMask:
     serializedVersion: 2
-    m_Bits: 3072
+    m_Bits: 2048
   ObstructionMask:
     serializedVersion: 2
     m_Bits: 4096
   _hitboxes:
   - {fileID: 1595044308}
+  _audioclips:
+  - {fileID: 8300000, guid: 76ea5bcb6cbf9ff42a250afbca5784f9, type: 3}
+  - {fileID: 8300000, guid: a58c2796cd17c62489c21ca48f6195e1, type: 3}
+  - {fileID: 8300000, guid: 87b0c9a1fd717964bad874c3f213c047, type: 3}
+  - {fileID: 8300000, guid: ed8a017fb7139b34fa491b12df9f4ec9, type: 3}
   walkRadius: 5
 --- !u!1 &5530448901317281498
 GameObject:
@@ -4007,13 +4046,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3268f0632bb6d384a841038a41049056, type: 3}
---- !u!4 &6958900084105380219 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -7154935748350325978, guid: 3268f0632bb6d384a841038a41049056, type: 3}
-  m_PrefabInstance: {fileID: 8945966463749737053}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8911722495260831158 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3268f0632bb6d384a841038a41049056, type: 3}
+  m_PrefabInstance: {fileID: 8945966463749737053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6958900084105380219 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7154935748350325978, guid: 3268f0632bb6d384a841038a41049056, type: 3}
   m_PrefabInstance: {fileID: 8945966463749737053}
   m_PrefabAsset: {fileID: 0}
