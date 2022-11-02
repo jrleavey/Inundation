@@ -2620,6 +2620,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 87b0c9a1fd717964bad874c3f213c047, type: 3}
   - {fileID: 8300000, guid: ed8a017fb7139b34fa491b12df9f4ec9, type: 3}
   walkRadius: 5
+  items:
+  - {fileID: 0}
+  - {fileID: 3656130267572588901, guid: ddb4c6eb416436840bfdf40515f8f265, type: 3}
+  - {fileID: 1163355323571853107, guid: c41bdffd57d2a104986f75fe6ce06da9, type: 3}
+  - {fileID: 5184922986584141727, guid: 6df325e186e8ad242a87e93841ba2bb2, type: 3}
+  - {fileID: 6715798391386262265, guid: 08877fdfe368f974381ae2d9ce9a1d29, type: 3}
 --- !u!1 &5530448901317281498
 GameObject:
   m_ObjectHideFlags: 0

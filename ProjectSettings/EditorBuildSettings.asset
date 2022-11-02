@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 4d020fe8a605b2e45ac14bf3b534ae20
   - enabled: 0
-    path: Assets/Scenes/Test_Hall.unity
-    guid: 7b00dc80c66f7084d96f94ec567293e4
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Swamp.unity
-    guid: 5fdad9be1fab4e34987853353c1480f9
+    path: Assets/Scenes/Blockout.unity
+    guid: 5759a6ef5e59940438b8779010d8398f
   m_configObjects: {}

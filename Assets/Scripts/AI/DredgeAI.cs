@@ -40,6 +40,8 @@ public class DredgeAI : MonoBehaviour
     private bool isRoared;
     private bool canPlayAttackSound = true;
     private bool canPlayDeathSound = true;
+    private bool droppedanItem = false;
+
 
     public GameObject _player;
 
@@ -62,6 +64,17 @@ public class DredgeAI : MonoBehaviour
 
 
     [Range(0, 500)] public float walkRadius;
+
+    private int[] itemDropChange =
+    {
+        50,
+        15,
+        13,
+        10,
+        12,
+    };
+
+    public GameObject[] items;
 
 
     private void Awake()
@@ -293,6 +306,7 @@ public class DredgeAI : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
         isDying = true;
+        StartCoroutine(DropItems());
         yield return new WaitForSeconds(1.5f);
         Destroy(this.gameObject);
     }
@@ -305,5 +319,33 @@ public class DredgeAI : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         canPlayAttackSound = true;
+    }
+    private IEnumerator DropItems()
+    {
+        if (droppedanItem == false)
+        {
+            droppedanItem = true;
+            Debug.Log("CalledDropItems");
+            int randomItem = randomTable();
+            GameObject newItem = Instantiate(items[randomItem], this.transform.position, Quaternion.identity);
+            newItem.transform.parent = null;
+            yield return new WaitForSeconds(3f);
+        }
+    }
+    int randomTable()
+    {
+        int rng = Random.Range(1, 101);
+        for (int i = 0; i < itemDropChange.Length; i++)
+        {
+            if (rng <= itemDropChange[i])
+            {
+                return i;
+            }
+            else
+            {
+                rng -= itemDropChange[i];
+            }
+        }
+        return 0;
     }
 }

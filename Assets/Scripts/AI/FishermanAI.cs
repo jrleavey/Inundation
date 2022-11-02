@@ -39,6 +39,7 @@ public class FishermanAI : MonoBehaviour
     private bool attackRooted = false;
     private bool canPlayAttackSound = true;
     private bool canPlayDeathSound = true;
+    private bool droppedanItem = false;
 
 
 
@@ -67,6 +68,17 @@ public class FishermanAI : MonoBehaviour
 
 
     [Range(0, 500)] public float walkRadius;
+
+    private int[] itemDropChange =
+    {
+        70,
+        10,
+        8,
+        5,
+        7,
+    };
+
+    public GameObject[] items;
 
 
     private void Awake()
@@ -241,6 +253,7 @@ public class FishermanAI : MonoBehaviour
     {
         _currentHp-= gundamage;
         AudioSource.PlayClipAtPoint(_audioclips[1], transform.position);
+
         _currentPoise -= Random.Range(1, 3);
         if (_currentHp >= 1)
         {
@@ -255,7 +268,6 @@ public class FishermanAI : MonoBehaviour
         {
             StartCoroutine(Stagger());
         }
-
     }
     private IEnumerator Stagger()
     {
@@ -273,6 +285,7 @@ public class FishermanAI : MonoBehaviour
     private void Die()
 
     {
+        Debug.Log("Called Die");
         if (_currentHp <= 0)
         {
             if (canPlayDeathSound == true)
@@ -288,8 +301,10 @@ public class FishermanAI : MonoBehaviour
     }
     private IEnumerator DespawnTimer()
     {
+        Debug.Log("Called DespawnTimer");
         yield return new WaitForSeconds(2.5f);
         isDying = true;
+        StartCoroutine(DropItems());
         yield return new WaitForSeconds(1.5f);
         Destroy(this.gameObject);
     }
@@ -320,5 +335,33 @@ public class FishermanAI : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         canPlayAttackSound = true;
+    }
+    private IEnumerator DropItems()
+    {
+        if (droppedanItem == false)
+        {
+            droppedanItem = true;
+            Debug.Log("CalledDropItems");
+            int randomItem = randomTable();
+            GameObject newItem = Instantiate(items[randomItem], this.transform.position, Quaternion.identity);
+            newItem.transform.parent = null;
+            yield return new WaitForSeconds(3f);
+        }          
+    }
+    int randomTable()
+    {
+        int rng = Random.Range(1, 101);
+        for (int i = 0; i < itemDropChange.Length; i++)
+        {
+            if (rng <= itemDropChange[i])
+            {
+                return i;
+            }
+            else
+            {
+                rng -= itemDropChange[i];
+            }
+        }
+        return 0;
     }
 }

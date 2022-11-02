@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public enum ActiveWeapon
     {
+        None,
         Handgun,
         Shotgun,
         SMG,
@@ -63,7 +64,9 @@ public class PlayerController : MonoBehaviour
     private bool aButton;
     [SerializeField]
     public bool isInvincible = false;
+    [SerializeField]
     private bool didIPause = false;
+    private bool StartLevel = true;
 
 
     [SerializeField]
@@ -103,6 +106,7 @@ public class PlayerController : MonoBehaviour
     {
         _currentHealth = 4;
         _speed = 5;
+        didIPause = false;
         _playerControls = new PlayerControls();
         _playerControls.Controller.Enable();
         InputSetup();
@@ -112,7 +116,7 @@ public class PlayerController : MonoBehaviour
     {
         MovementController();
         WeaponControls();
-        if (isMoving == true && didIPause == false)
+        if (isMoving == true && didIPause == false && StartLevel == false)
         {
             _footStepHolder.SetActive(true);
         }
@@ -174,6 +178,8 @@ public class PlayerController : MonoBehaviour
             case ActiveWeapon.Rifle: // Rifle
                 RifleLogic();
                 break;
+            case ActiveWeapon.None:
+                break;
         }
     }
     
@@ -205,7 +211,28 @@ public class PlayerController : MonoBehaviour
                 case 4: // Health
                     healthKits++;
                     AudioManager.Instance.Play("PickupHealth");
+                    break;
+                case 5:
+                    SwapToRevolver();
+                    currentAmmo = 6;
+                    AudioManager.Instance.Play("Equip");
+                    UIManager.Instance.FoundWeapon(_itemID);
+                    UIManager.Instance.UpdateRevolverAmmo(currentAmmo);
 
+                    break;
+                case 6:
+                    SwapToShotgun();
+                    currentAmmo = 5;
+                    AudioManager.Instance.Play("Equip");
+                    UIManager.Instance.FoundWeapon(_itemID);
+                    UIManager.Instance.UpdateShotgunAmmo(currentAmmo);
+                    break;
+                case 7:
+                    SwapToRifle();
+                    currentAmmo = 4;
+                    AudioManager.Instance.Play("Equip");
+                    UIManager.Instance.FoundWeapon(_itemID);
+                    UIManager.Instance.UpdateRifleAmmo(currentAmmo);
                     break;
             }
             UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo, healthKits);
@@ -441,36 +468,40 @@ public class PlayerController : MonoBehaviour
     }
     private void LeftStickClick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        isAiming = !isAiming;
-
-        if (isAiming == true)
+        if (didIPause == false)
         {
-            switch (_ActiveWeapon)
+            isAiming = !isAiming;
+            UIManager.Instance.SwapCrosshair();
+
+            if (isAiming == true)
             {
-                case ActiveWeapon.Handgun: //Pistol
-                    _revolverAnim.SetBool("isAiming", true);
-                    break;
-                case ActiveWeapon.Shotgun: //Shotgun
-                        //Ready Shotgun
-                    _shotgunAnim.SetBool("isAiming", true);
+                switch (_ActiveWeapon)
+                {
+                    case ActiveWeapon.Handgun: //Pistol
+                        _revolverAnim.SetBool("isAiming", true);
+                        break;
+                    case ActiveWeapon.Shotgun: //Shotgun
+                                               //Ready Shotgun
+                        _shotgunAnim.SetBool("isAiming", true);
 
-                    break;
-                case ActiveWeapon.SMG: //SMG
-                        //Ready SMG
-                    break;
-                case ActiveWeapon.Rifle: //Rifle
-                        //Ready Rifle
-                    _rifleAnim.SetBool("isAiming", true);
+                        break;
+                    case ActiveWeapon.SMG: //SMG
+                                           //Ready SMG
+                        break;
+                    case ActiveWeapon.Rifle: //Rifle
+                                             //Ready Rifle
+                        _rifleAnim.SetBool("isAiming", true);
 
-                    break;
+                        break;
+                }
             }
-        }
-        else
-        {
-            _revolverAnim.SetBool("isAiming", false);
-            _shotgunAnim.SetBool("isAiming", false);
-            _rifleAnim.SetBool("isAiming", false);
+            else
+            {
+                _revolverAnim.SetBool("isAiming", false);
+                _shotgunAnim.SetBool("isAiming", false);
+                _rifleAnim.SetBool("isAiming", false);
 
+            }
         }
     }
     private void RightStickClick_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -520,7 +551,13 @@ public class PlayerController : MonoBehaviour
     {
 
         aButton = true;
-        //StartCoroutine(AButtonFailsafeEnd());
+
+        if (StartLevel == true)
+        {
+            StartLevel = false;
+            UIManager.Instance.GameTimeStart();
+        }
+
 
     }
     private void Interact_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -542,6 +579,7 @@ public class PlayerController : MonoBehaviour
     private void Menu_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         didIPause = !didIPause;
+
             UIManager.Instance.GetComponent<UIManager>().PauseMenu();
             UpdateAmmoReserves();
         
@@ -664,7 +702,6 @@ public class PlayerController : MonoBehaviour
         }
         _ActiveWeapon = ActiveWeapon.Handgun;
         UIManager.Instance.UpdateRevolverAmmo(currentAmmo);
-
         isAiming = false;
         _Weapons[0].SetActive(true);
         _Weapons[1].SetActive(false);
@@ -744,6 +781,7 @@ public class PlayerController : MonoBehaviour
         _ActiveWeapon = ActiveWeapon.Rifle;
         UIManager.Instance.UpdateRifleAmmo(currentAmmo);
         isAiming = false;
+
         _Weapons[3].SetActive(true);
         _Weapons[0].SetActive(false);
         _Weapons[1].SetActive(false);
@@ -756,6 +794,10 @@ public class PlayerController : MonoBehaviour
     public void UnpauseConsistency()
     {
         didIPause = false;
+    }
+    public void UnpauseConsistency2()
+    {
+        didIPause = true;
     }
 
     public void OnTriggerStay(Collider other)
@@ -770,6 +812,28 @@ public class PlayerController : MonoBehaviour
                 UIManager.Instance.ClearPickupPrompt();
             }
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "End")
+        {
+            didIPause = true;
+            UIManager.Instance.EndGame();
+
+        }
+    }
+    public void ResetInputSystem()
+    {
+        _playerControls = new PlayerControls();
+        _playerControls.Controller.Enable();
+        InputSetup();
+    }
+    public void NotAiming()
+    {
+        _revolverAnim.SetBool("isAiming", false);
+        _shotgunAnim.SetBool("isAiming", false);
+        _rifleAnim.SetBool("isAiming", false);
+
     }
 }
 

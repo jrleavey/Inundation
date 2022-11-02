@@ -8,6 +8,7 @@ TagManager:
   - Pickup
   - Throwable
   - Blood
+  - End
   layers:
   - Default
   - TransparentFX

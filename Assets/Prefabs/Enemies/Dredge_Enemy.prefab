@@ -2984,6 +2984,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: be8014f77e04cb34082f97a9ae9e0b32, type: 3}
   - {fileID: 8300000, guid: 68f95074680c1c840a284cbd775c2fa9, type: 3}
   walkRadius: 5
+  items:
+  - {fileID: 0}
+  - {fileID: 3656130267572588901, guid: ddb4c6eb416436840bfdf40515f8f265, type: 3}
+  - {fileID: 1163355323571853107, guid: c41bdffd57d2a104986f75fe6ce06da9, type: 3}
+  - {fileID: 5184922986584141727, guid: 6df325e186e8ad242a87e93841ba2bb2, type: 3}
+  - {fileID: 6715798391386262265, guid: 08877fdfe368f974381ae2d9ce9a1d29, type: 3}
 --- !u!195 &7955996622637053446
 NavMeshAgent:
   m_ObjectHideFlags: 0

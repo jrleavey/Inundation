@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
+    [SerializeField]
     private bool isTheGamePaused = false;
     public GameObject _pausemenu;
 
@@ -16,9 +17,15 @@ public class UIManager : MonoBehaviour
     public GameObject _optionsClosedButton;
     public GameObject _creditsFirstButton;
     public GameObject _creditsClosedButton;
+    public GameObject _winScreenFirstButton;
 
     public GameObject _optionsMenuSlide;
     public GameObject _creditsMenuSlide;
+    public GameObject _startMenu;
+    public GameObject _winMenu;
+
+    public GameObject _deathscreenFirstButton;
+    public GameObject _backtoDeathscreenfromOptionsButton;
 
     [SerializeField]
     private Slider VolumeSlider;
@@ -57,16 +64,41 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject _deathScreen;
 
+    [SerializeField]
+    private GameObject[] _functionalWeaponButtons;
+
+    [SerializeField]
+    private GameObject _crosshair;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+    }
     private void Start()
     {
-        Instance = this;
-        Time.timeScale = 1;
-        isTheGamePaused = false;
+
+
+        _deathScreen.SetActive(false);
+        _pausemenu.SetActive(false);
+        _startMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        Time.timeScale = 0;
+        isTheGamePaused = true;
         _player = GameObject.Find("Player");
     }
 
     public void PauseMenu()
     {
+        Debug.Log("Calling PauseMenu on UIManager");
         isTheGamePaused = !isTheGamePaused;
 
 
@@ -137,17 +169,19 @@ public class UIManager : MonoBehaviour
     public void ReturnToMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        Destroy(this.gameObject);
     }
     public void RetryGame()
     {
-        // SceneManager.LoadScene
-        //Load Restart the game
+        SceneManager.LoadScene(1);
+        Destroy(this.gameObject);
+        _player.GetComponent<PlayerController>().ResetInputSystem();
     }
 
     public void BloodImageVisible()
     {
-        float height = Screen.height * .75f;
-        float width = Screen.width * .75f;
+        float height = Screen.height;
+        float width = Screen.width;
 
         float randomHeight = Random.Range(height * -1, height);
         float randomWidth = Random.Range(width * -1, width);
@@ -160,6 +194,7 @@ public class UIManager : MonoBehaviour
     public void UseRevolver()
     {
         _player.GetComponent<PlayerController>().SwapToRevolver();
+        _crosshair.SetActive(false);
         ShotgunUI.SetActive(false);
         RifleUI.SetActive(false);
         handgunUI.SetActive(true);
@@ -167,11 +202,14 @@ public class UIManager : MonoBehaviour
         AudioManager.Instance.Play("Equip");
         PauseMenu();
         _player.GetComponent<PlayerController>().UnpauseConsistency();
+        _player.GetComponent<PlayerController>().NotAiming();
+
 
     }
     public void UseShotgun()
     {
         _player.GetComponent<PlayerController>().SwapToShotgun();
+        _crosshair.SetActive(false);
         handgunUI.SetActive(false);
         RifleUI.SetActive(false);
         ShotgunUI.SetActive(true);
@@ -179,11 +217,14 @@ public class UIManager : MonoBehaviour
         AudioManager.Instance.Play("Equip");
         PauseMenu();
         _player.GetComponent<PlayerController>().UnpauseConsistency();
+        _player.GetComponent<PlayerController>().NotAiming();
+
 
     }
     public void UseRifle()
     {
         _player.GetComponent<PlayerController>().SwapToRifle();
+        _crosshair.SetActive(false);
         handgunUI.SetActive(false);
         ShotgunUI.SetActive(false);
         RifleUI.SetActive(true);
@@ -192,6 +233,8 @@ public class UIManager : MonoBehaviour
 
         PauseMenu();
         _player.GetComponent<PlayerController>().UnpauseConsistency();
+        _player.GetComponent<PlayerController>().NotAiming();
+
 
     }
     public void UseHealthkit()
@@ -258,7 +301,16 @@ public class UIManager : MonoBehaviour
         _deathScreen.SetActive(true);
         Time.timeScale = 0;
         isTheGamePaused = true;
+        _player.GetComponent<PlayerController>().UnpauseConsistency2();
 
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_deathscreenFirstButton);
+    }
+    public void BacktoDeathScreenFromOptions()
+    {
+        _optionsMenuSlide.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_deathscreenFirstButton);
     }
     public void PickupItemPrompt(int itemID)
     {
@@ -279,10 +331,69 @@ public class UIManager : MonoBehaviour
             case 4:
                 _pickupItemText.text = "Take the Health Kit?";
                 break;
+            case 5:
+                _pickupItemText.text = "Take the Revolver?";
+                break;
+            case 6:
+                _pickupItemText.text = "Take the Shotgun?";
+                break;
+            case 7:
+                _pickupItemText.text = "Take the Rifle?";
+                break;
         }
     }
     public void ClearPickupPrompt()
     {
         _pickupItemText.text = "";
+    }
+    public void FoundWeapon(int itemID)
+    {
+        switch(itemID)
+        {
+            case 5:
+                handgunUI.SetActive(true);
+                ShotgunUI.SetActive(false);
+                RifleUI.SetActive(false);
+                _functionalWeaponButtons[0].SetActive(true);
+                break;
+            case 6:
+                handgunUI.SetActive(false);
+                ShotgunUI.SetActive(true);
+                RifleUI.SetActive(false);
+                _functionalWeaponButtons[1].SetActive(true);
+                break;
+            case 7:
+                handgunUI.SetActive(false);
+                ShotgunUI.SetActive(false);
+                RifleUI.SetActive(true);
+                _functionalWeaponButtons[2].SetActive(true);
+                break;
+        }
+    }
+    public void SwapCrosshair()
+    {
+        if (_crosshair.activeInHierarchy == true)
+        {
+            _crosshair.SetActive(false);
+        }    
+        else if (_crosshair.activeInHierarchy == false)
+        {
+            _crosshair.SetActive(true);
+        }    
+    }
+    public void GameTimeStart()
+    {
+        _startMenu.SetActive(false);
+        Time.timeScale = 1;
+        isTheGamePaused = false;
+        _player.GetComponent<PlayerController>().UnpauseConsistency();
+    }
+    public void EndGame()
+    {
+        _winMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_winScreenFirstButton);
+        Time.timeScale = 0;
+        isTheGamePaused = true;
     }
 }
