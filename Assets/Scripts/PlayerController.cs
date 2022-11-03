@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _currentHealth = 4;
-        _speed = 5;
+        _speed = 7;
         didIPause = false;
         _playerControls = new PlayerControls();
         _playerControls.Controller.Enable();
@@ -415,7 +415,7 @@ public class PlayerController : MonoBehaviour
                 AudioManager.Instance.Play("PlayerDamage");
             }
             _currentHealth--;
-            _speed = 7;
+            _speed = 9;
             StartCoroutine(BecomeInvincible());
             CMCameraShake.Instance.ShakeCamera(1f, .5f);
             UIManager.Instance.BloodImageVisible();
@@ -432,7 +432,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
         isInvincible = false;
-        _speed = 5;
+        _speed = 7;
     }
     public void Heal()
     {
@@ -535,7 +535,7 @@ public class PlayerController : MonoBehaviour
                 }
                 break;
             case ActiveWeapon.Rifle: // Rifle
-                if (currentAmmo != 4 && rifleAmmo >= 0)
+                if (currentAmmo != 4 && rifleAmmo > 0)
                 {
                     isReloading = true;
                     AudioManager.Instance.Play("Rifle Reload");

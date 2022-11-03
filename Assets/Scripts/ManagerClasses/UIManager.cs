@@ -168,6 +168,9 @@ public class UIManager : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        Time.timeScale = 0;
+        isTheGamePaused = true;
+        _player.GetComponent<PlayerController>().UnpauseConsistency2();
         SceneManager.LoadScene("MainMenu");
         Destroy(this.gameObject);
     }
@@ -180,8 +183,8 @@ public class UIManager : MonoBehaviour
 
     public void BloodImageVisible()
     {
-        float height = Screen.height;
-        float width = Screen.width;
+        float height = Screen.height * .5f;
+        float width = Screen.width * .5f;
 
         float randomHeight = Random.Range(height * -1, height);
         float randomWidth = Random.Range(width * -1, width);
@@ -390,10 +393,11 @@ public class UIManager : MonoBehaviour
     }
     public void EndGame()
     {
+        Time.timeScale = 0;
+        isTheGamePaused = true;
+        _player.GetComponent<PlayerController>().UnpauseConsistency2();
         _winMenu.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(_winScreenFirstButton);
-        Time.timeScale = 0;
-        isTheGamePaused = true;
     }
 }

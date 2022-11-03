@@ -186,7 +186,7 @@ public class DredgeAI : MonoBehaviour
         int wait_time = Random.Range(3, 7);
         _navMeshAgent.speed = 0;
         yield return new WaitForSeconds(wait_time);
-        _navMeshAgent.speed = 3f;
+        _navMeshAgent.speed = 8f;
         print("I waited for " + wait_time + "sec");
         _IAmWaiting = false;
     }
@@ -227,7 +227,7 @@ public class DredgeAI : MonoBehaviour
             {
                 if (attackRooted == false && isStaggered == false)
                 {
-                    _navMeshAgent.speed = 5.5f;
+                    _navMeshAgent.speed = 8f;
                 }
                 _anim.SetBool("isAttacking", false);
                 _hitboxes[0].SetActive(false);
@@ -237,14 +237,14 @@ public class DredgeAI : MonoBehaviour
 
             if (_navMeshAgent.remainingDistance > 10f && _AIState == AIState.Hostile && isStaggered == false && attackRooted == false)
             {
-                _navMeshAgent.speed = 8;
+                _navMeshAgent.speed = 9;
                 _anim.SetBool("isRunning", true);
                 _anim.SetBool("isWalking", false);
             }
             else if (_navMeshAgent.remainingDistance < 10f && _AIState == AIState.Hostile && isStaggered == false && attackRooted == false|| _AIState == AIState.Passive || _AIState == AIState.Dying)
             {
                
-                _navMeshAgent.speed = 5.5f;
+                _navMeshAgent.speed = 7.5f;
                 _anim.SetBool("isRunning", false);
                 _anim.SetBool("isWalking", true);
             }
