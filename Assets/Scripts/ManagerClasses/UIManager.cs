@@ -52,6 +52,8 @@ public class UIManager : MonoBehaviour
     private Text ShotgunUIText;
     [SerializeField]
     private Text RifleUIText;
+    [SerializeField]
+    private Text CoinsUIText;
 
     [SerializeField]
     private Text[] _ammoAmounts;
@@ -297,6 +299,10 @@ public class UIManager : MonoBehaviour
                 break;
         }
     }
+    public void UpdateCoins(int coins)
+    {
+        CoinsUIText.text = "" + coins;
+    }
     public void Die()
     {
         GameObject blood = GameObject.FindGameObjectWithTag("Blood");
@@ -342,6 +348,9 @@ public class UIManager : MonoBehaviour
                 break;
             case 7:
                 _pickupItemText.text = "Take the Rifle?";
+                break;
+            case 8:
+                _pickupItemText.text = "Take the Coins?";
                 break;
         }
     }

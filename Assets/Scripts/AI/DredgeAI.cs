@@ -67,11 +67,12 @@ public class DredgeAI : MonoBehaviour
 
     private int[] itemDropChange =
     {
-        50,
+        20,
         15,
         13,
         10,
         12,
+        30,
     };
 
     public GameObject[] items;

@@ -71,11 +71,12 @@ public class FishermanAI : MonoBehaviour
 
     private int[] itemDropChange =
     {
-        70,
+        40,
         10,
         8,
         5,
         7,
+        30,
     };
 
     public GameObject[] items;

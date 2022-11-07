@@ -45,6 +45,9 @@ public class PickUp : MonoBehaviour
             case 7:
                 _playerController.PickedUpItem(7);
                 break;
+            case 8:
+                _playerController.PickedUpItem(8);
+                break;
             default:
                 Debug.Log("Nothing is activated"); break;
 
@@ -80,6 +83,9 @@ public class PickUp : MonoBehaviour
                     break;
                 case 7:
                     UIManager.Instance.PickupItemPrompt(7);
+                    break;
+                case 8:
+                    UIManager.Instance.PickupItemPrompt(8);
                     break;
             }
         }

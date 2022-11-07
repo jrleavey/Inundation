@@ -75,6 +75,8 @@ public class PlayerController : MonoBehaviour
     private GameObject[] RaycastHolders;
     [SerializeField]
     private GameObject[] _Weapons;
+    [SerializeField]
+    private int _coins;
 
     [SerializeField]
     private Animator _revolverAnim;
@@ -97,6 +99,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject _footStepHolder;
 
+    [SerializeField]
+    private CharacterController _controller;
+    float gravity = -9.81f;
+    Vector3 Velocity;
+    bool isGrounded;
+
+    public Transform groundCheck;
+    public float grounddistance = .4f;
+    public LayerMask groundmask;
 
     private void Awake()
     {
@@ -104,6 +115,7 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
+        _controller = GetComponent<CharacterController>();
         _currentHealth = 4;
         _speed = 7;
         didIPause = false;
@@ -115,6 +127,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovementController();
+
         WeaponControls();
         if (isMoving == true && didIPause == false && StartLevel == false)
         {
@@ -131,6 +144,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     private void MovementController()
     {
         Vector2 leftStick = _playerControls.Controller.LeftStickMovement.ReadValue<Vector2>();
@@ -145,10 +159,26 @@ public class PlayerController : MonoBehaviour
 
         _eyeRot = Mathf.Clamp(_eyeRot, -45f, 45f);
         _playerEyes.transform.localRotation = Quaternion.Euler(_eyeRot, 0f, 0f);
-        
+
+        isGrounded = Physics.CheckSphere(groundCheck.position, grounddistance, groundmask);
+
+        if (isGrounded && Velocity.y < 0)
+        {
+            Velocity.y = -2f;
+        }    
+
+        Vector3 move = transform.transform.right * leftStick.x + transform.forward * leftStick.y;
+
+        _controller.Move(move * _speed * Time.deltaTime);
+
+        Velocity.y += gravity * Time.deltaTime;
+
+        _controller.Move(Velocity * Time.deltaTime);
 
 
-        transform.Translate(leftStick.x * Time.deltaTime * _speed, 0, leftStick.y * Time.deltaTime * _speed);
+
+
+
         if (leftStick.x > .05 || leftStick.x < -.05 ||leftStick.y > .05 || leftStick.y < -.05)
         {
             isMoving = true;
@@ -233,6 +263,11 @@ public class PlayerController : MonoBehaviour
                     AudioManager.Instance.Play("Equip");
                     UIManager.Instance.FoundWeapon(_itemID);
                     UIManager.Instance.UpdateRifleAmmo(currentAmmo);
+                    break;
+                case 8:
+                    _coins += Random.Range(1, 10) * 100;
+                    UIManager.Instance.UpdateCoins(_coins);
+
                     break;
             }
             UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo, healthKits);
