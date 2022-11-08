@@ -60,6 +60,8 @@ public class FishermanAI : MonoBehaviour
     [SerializeField]
     private GameObject[] _hitboxes;
     private BoxCollider _boxcollider;
+    [SerializeField]
+    private Collider[] _hurtboxes;
 
 
 
@@ -250,7 +252,7 @@ public class FishermanAI : MonoBehaviour
             }
         }
     }
-    private void Damage(int gundamage)
+    public void Damage(int gundamage)
     {
         _currentHp-= gundamage;
         AudioSource.PlayClipAtPoint(_audioclips[1], transform.position);

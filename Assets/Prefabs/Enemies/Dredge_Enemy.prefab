@@ -257,6 +257,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4333087653690761309}
+  - component: {fileID: 1059912830}
+  - component: {fileID: 1059912829}
   m_Layer: 0
   m_Name: DredgeRig_0001:BigRigs:Neck_3
   m_TagString: Untagged
@@ -282,6 +284,33 @@ Transform:
   m_Father: {fileID: 4968985187701486542}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1059912830
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925622691867219151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Center: {x: -0.1, y: 0, z: 0.1}
+--- !u!114 &1059912829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925622691867219151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffdafb90f81d0414abdf6c4bf663c0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amICriticalHurtbox: 1
+  _rootEnemy: {fileID: 7955996622637053443}
 --- !u!1 &985198908008746688
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +665,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4495642440730885648}
+  - component: {fileID: 717757971}
   m_Layer: 0
   m_Name: DredgeRig_0001:BigRigs:L_Arm_2
   m_TagString: Untagged
@@ -658,6 +688,19 @@ Transform:
   m_Father: {fileID: 7576406763260132167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &717757971
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705441861176172058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.3, z: 0.3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1857521690943752561
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,6 +896,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2475186554015900423}
+  - component: {fileID: 176739676}
   m_Layer: 0
   m_Name: DredgeRig_0001:BigRigs:L_Index_Finger_0
   m_TagString: Untagged
@@ -875,6 +919,20 @@ Transform:
   m_Father: {fileID: 2125597390984909036}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &176739676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070030001307760098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffdafb90f81d0414abdf6c4bf663c0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amICriticalHurtbox: 0
+  _rootEnemy: {fileID: 7955996622637053443}
 --- !u!1 &2144516895244980157
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +942,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1236651475382875788}
+  - component: {fileID: 2013120207}
+  - component: {fileID: 2013120206}
   m_Layer: 0
   m_Name: DredgeRig_0001:BigRigs:R_Arm_2
   m_TagString: Untagged
@@ -906,6 +966,33 @@ Transform:
   m_Father: {fileID: 1317507622273525676}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2013120207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144516895244980157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.3, z: 0.3}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2013120206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144516895244980157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffdafb90f81d0414abdf6c4bf663c0d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amICriticalHurtbox: 0
+  _rootEnemy: {fileID: 7955996622637053443}
 --- !u!1 &2206348523135772614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2990,6 +3077,7 @@ MonoBehaviour:
   - {fileID: 1163355323571853107, guid: c41bdffd57d2a104986f75fe6ce06da9, type: 3}
   - {fileID: 5184922986584141727, guid: 6df325e186e8ad242a87e93841ba2bb2, type: 3}
   - {fileID: 6715798391386262265, guid: 08877fdfe368f974381ae2d9ce9a1d29, type: 3}
+  - {fileID: 159157550497769983, guid: 7af77ae89dae3db4f87ec3c089b004b7, type: 3}
 --- !u!195 &7955996622637053446
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3119,8 +3207,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1889848, y: 2.79765, z: 0.6145117}
-  m_Center: {x: 0.024089597, y: 1.4603132, z: -0.19274391}
+  m_Size: {x: 0.63025403, y: 2.3660157, z: 0.6145117}
+  m_Center: {x: -0.025079435, y: 1.244496, z: -0.19274391}
 --- !u!1 &7972880173698485305
 GameObject:
   m_ObjectHideFlags: 0

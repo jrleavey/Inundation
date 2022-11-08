@@ -44,12 +44,12 @@ MonoBehaviour:
     max: 360
   skyIntensityMode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   exposure:
     m_OverrideState: 1
-    m_Value: 1.5
+    m_Value: 17.69
   multiplier:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
     min: 0
   upperHemisphereLuxValue:
@@ -74,19 +74,19 @@ MonoBehaviour:
     m_Value: 0
   top:
     m_OverrideState: 1
-    m_Value: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
   middle:
     m_OverrideState: 1
-    m_Value: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 1}
+    m_Value: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
   bottom:
     m_OverrideState: 1
-    m_Value: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+    m_Value: {r: 0.0013037875, g: 0.0013037875, b: 0.0013037875, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -124,7 +124,7 @@ MonoBehaviour:
     showEyeDropper: 1
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.00303527, g: 0.0033465356, b: 0.006512091, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d877ec3e844f2ca46830012e8e79319b, type: 3}
   m_Name: PhysicallyBasedSky
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   rotation:
     m_OverrideState: 0
