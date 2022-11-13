@@ -1120,3 +1120,60 @@ PrefabInstance:
       objectReference: {fileID: 715555542}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9effd765cc966cf498e437786f1bf4d8, type: 3}
+--- !u!1001 &2811285826842527395
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.9526541
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.146712
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.117347
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761198, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811285828561761199, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
+      propertyPath: m_Name
+      value: MothSwarm
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc47b5377c392ef4db89ca937dfe69f4, type: 3}
