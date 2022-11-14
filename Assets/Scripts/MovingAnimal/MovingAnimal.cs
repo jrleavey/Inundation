@@ -6,23 +6,37 @@ public class MovingAnimal : MonoBehaviour
     [SerializeField] MovingPath movingPath;
     [SerializeField] float tolerance = 0.5f;
     [SerializeField] float waitingTime = 3f;
-    float timer = Mathf.Infinity;
 
+    Transform playerLocation;
+    float allowedDistance = 10f;
+    float timer = Mathf.Infinity;
     int currentIndex = 0;
     int randomIndex = 0;
     NavMeshAgent nav;
     void Start()
     {
         nav = GetComponent<NavMeshAgent>();
+        if (playerLocation == null)
+        {
+            playerLocation = GameObject.FindWithTag("Player").transform;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        MoveAnimal();
+        if (CheckDistance())
+        {
+            MoveAnimal();
+        }
+        else
+        {
+            Flee();
+        }
         timer += Time.deltaTime;
     }
-    private void MoveAnimal()
+
+    void MoveAnimal()
     {
         int pathChildrenCount = movingPath.transform.childCount;
 
@@ -44,17 +58,30 @@ public class MovingAnimal : MonoBehaviour
         }
     }
 
-    private bool AtWaypoint()
+    bool AtWaypoint()
     {
         float distanceToWaypoint = Vector3.Distance(transform.position, GetCurrentWaypoint());
         return distanceToWaypoint < tolerance;
     }
-    private void CycleWaypoint()
+    void CycleWaypoint()
     {
         currentIndex = movingPath.NextIndex(randomIndex);
     }
-    private Vector3 GetCurrentWaypoint()
+    Vector3 GetCurrentWaypoint()
     {
         return movingPath.GetWayPoint(randomIndex);
     }
+
+    bool CheckDistance()
+    {
+        float DistancePlayerAndAnimal = Vector3.Distance(transform.position, playerLocation.position);
+        return allowedDistance < DistancePlayerAndAnimal;
+    }
+    void Flee()
+    {
+        Vector3 fleeDirection = transform.position - playerLocation.position;
+        Vector3 fleeDestination = transform.position + fleeDirection;
+        nav.SetDestination(fleeDestination);
+    }
+
 }
