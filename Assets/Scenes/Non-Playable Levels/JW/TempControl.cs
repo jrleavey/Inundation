@@ -19,7 +19,7 @@ public class TempControl : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        moveDireciton = transform.forward * verticalInput + transform.right * horizontalInput;
+        moveDireciton = (transform.forward * horizontalInput) + (transform.right * -verticalInput);
 
         transform.Translate(moveDireciton * speed * Time.deltaTime);
     }
