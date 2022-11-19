@@ -8,12 +8,7 @@ public class TempControl : MonoBehaviour
     float horizontalInput;
     float verticalInput;
     Vector3 moveDireciton;
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");

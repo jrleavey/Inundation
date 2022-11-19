@@ -6,15 +6,16 @@ using UnityEngine;
 public class DoorEvent : MonoBehaviour
 {
     public static DoorEvent current;
+
     void Start()
     {
         current = this;
     }
 
-    public event Action OnDoorTriggered;
+    public event Action<Vector3, int> OnDoorTriggered;
 
-    public void doorwayTrigger(object sender)
+    public void doorwayTrigger(int id, Vector3 playerLocation)
     {
-        OnDoorTriggered?.Invoke();
+        OnDoorTriggered?.Invoke(playerLocation, id);
     }
 }
