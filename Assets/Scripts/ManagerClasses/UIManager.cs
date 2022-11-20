@@ -45,11 +45,15 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject ShotgunUI;
     [SerializeField]
+    private GameObject TMPUI;
+    [SerializeField]
     private GameObject RifleUI;
     [SerializeField]
     private Text handgunUIText;
     [SerializeField]
     private Text ShotgunUIText;
+    [SerializeField]
+    private Text TMPUIText;
     [SerializeField]
     private Text RifleUIText;
     [SerializeField]
@@ -200,9 +204,10 @@ public class UIManager : MonoBehaviour
     {
         _player.GetComponent<PlayerController>().SwapToRevolver();
         _crosshair.SetActive(false);
-        ShotgunUI.SetActive(false);
-        RifleUI.SetActive(false);
         handgunUI.SetActive(true);
+        ShotgunUI.SetActive(false);
+        TMPUI.SetActive(false);
+        RifleUI.SetActive(false);
 
         AudioManager.Instance.Play("Equip");
         PauseMenu();
@@ -216,10 +221,28 @@ public class UIManager : MonoBehaviour
         _player.GetComponent<PlayerController>().SwapToShotgun();
         _crosshair.SetActive(false);
         handgunUI.SetActive(false);
-        RifleUI.SetActive(false);
         ShotgunUI.SetActive(true);
+        TMPUI.SetActive(false);
+        RifleUI.SetActive(false);
+        AudioManager.Instance.Play("Equip");
+        PauseMenu();
+        _player.GetComponent<PlayerController>().UnpauseConsistency();
+        _player.GetComponent<PlayerController>().NotAiming();
+
+
+    }
+    public void UseTMP()
+    {
+        _player.GetComponent<PlayerController>().SwapToTMP();
+        _crosshair.SetActive(false);
+        handgunUI.SetActive(false);
+        ShotgunUI.SetActive(false);
+        TMPUI.SetActive(true);
+        RifleUI.SetActive(false);
+
 
         AudioManager.Instance.Play("Equip");
+
         PauseMenu();
         _player.GetComponent<PlayerController>().UnpauseConsistency();
         _player.GetComponent<PlayerController>().NotAiming();
@@ -232,6 +255,7 @@ public class UIManager : MonoBehaviour
         _crosshair.SetActive(false);
         handgunUI.SetActive(false);
         ShotgunUI.SetActive(false);
+        TMPUI.SetActive(false);
         RifleUI.SetActive(true);
 
         AudioManager.Instance.Play("Equip");
@@ -253,6 +277,10 @@ public class UIManager : MonoBehaviour
     {
         handgunUIText.text = "" + currentammo;
     }
+    public void UpdateTMPAmmo(int currentammo)
+    {
+        TMPUIText.text = "" + currentammo;
+    }
     public void UpdateShotgunAmmo(int currentammo)
     {
         ShotgunUIText.text = "" + currentammo;
@@ -261,12 +289,13 @@ public class UIManager : MonoBehaviour
     {
         RifleUIText.text = "" + currentammo;
     }
-    public void UpdateAmmoReserves(int handgunAmmo, int Shotgunammo, int rifleammo, int healthkits)
+    public void UpdateAmmoReserves(int handgunAmmo, int Shotgunammo, int rifleammo, int smgammo, int healthkits)
     {
         _ammoAmounts[0].text = "" + handgunAmmo;
         _ammoAmounts[1].text = "" + Shotgunammo;
         _ammoAmounts[2].text = "" + rifleammo;
-        _ammoAmounts[3].text = "" + healthkits;
+        _ammoAmounts[3].text = "" + smgammo;
+        _ammoAmounts[4].text = "" + healthkits;
 
     }
     public void UpdateHealth(int currenthealth)
@@ -352,6 +381,13 @@ public class UIManager : MonoBehaviour
             case 8:
                 _pickupItemText.text = "Take the Coins?";
                 break;
+            case 9:
+                _pickupItemText.text = "Take the TMP?";
+                break;
+            case 10:
+                _pickupItemText.text = "Take the TMP Ammo?";
+                break;
+                
         }
     }
     public void ClearPickupPrompt()
@@ -365,21 +401,32 @@ public class UIManager : MonoBehaviour
             case 5:
                 handgunUI.SetActive(true);
                 ShotgunUI.SetActive(false);
+                TMPUI.SetActive(false);
                 RifleUI.SetActive(false);
                 _functionalWeaponButtons[0].SetActive(true);
                 break;
             case 6:
                 handgunUI.SetActive(false);
                 ShotgunUI.SetActive(true);
+                TMPUI.SetActive(false);
                 RifleUI.SetActive(false);
                 _functionalWeaponButtons[1].SetActive(true);
                 break;
             case 7:
                 handgunUI.SetActive(false);
                 ShotgunUI.SetActive(false);
+                TMPUI.SetActive(true);
+                RifleUI.SetActive(false);
+                _functionalWeaponButtons[3].SetActive(true);
+                break;
+            case 9:
+                handgunUI.SetActive(false);
+                ShotgunUI.SetActive(false);
+                TMPUI.SetActive(false);
                 RifleUI.SetActive(true);
                 _functionalWeaponButtons[2].SetActive(true);
                 break;
+
         }
     }
     public void SwapCrosshair()

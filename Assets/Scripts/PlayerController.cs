@@ -67,6 +67,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private bool didIPause = false;
     private bool StartLevel = true;
+    [SerializeField]
+    private bool isShootingTMP = false;
 
 
     [SerializeField]
@@ -83,6 +85,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Animator _shotgunAnim;
     [SerializeField]
+    private Animator _TMPAnim;
+    [SerializeField]
     private Animator _rifleAnim;
 
     [SerializeField]
@@ -93,6 +97,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] ParticleSystem smgEffect;
     [SerializeField] ParticleSystem handgunEffect;
     [SerializeField] ParticleSystem rifleEffect;
+
+    [SerializeField]
+    private AudioSource _TMPAudioShoot;
 
     
 
@@ -204,6 +211,16 @@ public class PlayerController : MonoBehaviour
                 break;
             case ActiveWeapon.SMG: // SMG
                 SMGLogic();
+                if (isShootingTMP == true)
+                {
+                    _TMPAudioShoot.gameObject.SetActive(true);
+                    _TMPAnim.SetBool("isShooting", true);
+                }
+                else
+                {
+                    _TMPAudioShoot.gameObject.SetActive(false);
+                    _TMPAnim.SetBool("isShooting", false);
+                }
                 break;
             case ActiveWeapon.Rifle: // Rifle
                 RifleLogic();
@@ -267,10 +284,20 @@ public class PlayerController : MonoBehaviour
                 case 8:
                     _coins += Random.Range(1, 10) * 100;
                     UIManager.Instance.UpdateCoins(_coins);
-
+                    break;
+                case 9:
+                    SwapToTMP();
+                    currentAmmo = 30;
+                    AudioManager.Instance.Play("Equip");
+                    UIManager.Instance.FoundWeapon(_itemID);
+                    UIManager.Instance.UpdateTMPAmmo(currentAmmo);
+                    break;
+                case 10:
+                    smgAmmo += Random.Range(5,25);
+                    AudioManager.Instance.Play("PickupAmmo");
                     break;
             }
-            UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo, healthKits);
+            UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo, smgAmmo, healthKits);
         }      
     }
 
@@ -371,12 +398,31 @@ public class PlayerController : MonoBehaviour
         fireRate = .1f;
         if (isAiming == true && aButton == true && currentAmmo >= 1 && Time.time > nextFire)
         {
+            isShootingTMP = true;
+
+                StartCoroutine(SMGFiringLogic());
+                UIManager.Instance.UpdateTMPAmmo(currentAmmo);
+                StartCoroutine(FireAnimTimers());
+                aButton = false;
             nextFire = Time.time + fireRate;
-            int amountOfProjectiles = 1;
-            for (int i = 0; i < amountOfProjectiles; i++)
-            {
-                SMGSpread();
-            }
+            
+        }
+        else if (isAiming == true && aButton == true && currentAmmo == 0 && Time.time > nextFire)
+        {
+            isShootingTMP = false;
+            nextFire = Time.time + fireRate;
+            AudioManager.Instance.Play("Out of Ammo");
+            return;
+        }
+    }
+    private IEnumerator SMGFiringLogic()
+    {
+        yield return new WaitForSeconds(.1f);
+        currentAmmo--;
+        int amountOfProjectiles = 1;
+        for (int i = 0; i < amountOfProjectiles; i++)
+        {
+            SMGSpread();
         }
     }
     private void SMGSpread()
@@ -521,7 +567,7 @@ public class PlayerController : MonoBehaviour
 
                         break;
                     case ActiveWeapon.SMG: //SMG
-                                           //Ready SMG
+                        _TMPAnim.SetBool("isAiming", true);
                         break;
                     case ActiveWeapon.Rifle: //Rifle
                                              //Ready Rifle
@@ -534,6 +580,7 @@ public class PlayerController : MonoBehaviour
             {
                 _revolverAnim.SetBool("isAiming", false);
                 _shotgunAnim.SetBool("isAiming", false);
+                _TMPAnim.SetBool("isAiming", false);
                 _rifleAnim.SetBool("isAiming", false);
 
             }
@@ -562,15 +609,16 @@ public class PlayerController : MonoBehaviour
                 }
                 break;
             case ActiveWeapon.SMG: // SMG
-                if (currentAmmo != 30)
+                if (currentAmmo != 30 && smgAmmo >= 1)
                 {
                     isReloading = true;
-
+                    AudioManager.Instance.Play("TMP Reload");
+                    _TMPAnim.SetBool("isReloading", true);
                     StartCoroutine(ReloadTimers());
                 }
                 break;
             case ActiveWeapon.Rifle: // Rifle
-                if (currentAmmo != 4 && rifleAmmo > 0)
+                if (currentAmmo != 4 && rifleAmmo >= 1)
                 {
                     isReloading = true;
                     AudioManager.Instance.Play("Rifle Reload");
@@ -602,8 +650,10 @@ public class PlayerController : MonoBehaviour
     }
     private IEnumerator AButtonFailsafeEnd()
     {
-        yield return new WaitForSecondsRealtime(.1f);
-        aButton = false;
+
+            yield return new WaitForSecondsRealtime(.1f);
+            aButton = false;
+        
     }
     private IEnumerator RStickFailsafeEnd()
     {
@@ -663,7 +713,24 @@ public class PlayerController : MonoBehaviour
                 break;
 
             case ActiveWeapon.SMG: // SMG
-                
+                missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
+                yield return new WaitForSeconds(reloadtime);
+                _TMPAnim.SetBool("isReloading", false);
+                if (currentAmmo + smgAmmo >= magazineCapacity)
+                {
+                    currentAmmo = magazineCapacity;
+                    smgAmmo -= missingbullets;
+                }
+                else if (currentAmmo + shotgunAmmo < magazineCapacity)
+                {
+                    currentAmmo = currentAmmo + smgAmmo;
+                    smgAmmo = 0;
+                }
+                isReloading = false;
+                UIManager.Instance.UpdateTMPAmmo(currentAmmo);
+
+                break;
+
 
             case ActiveWeapon.Rifle: // Rifle
                 missingbullets = Mathf.Abs(magazineCapacity - currentAmmo);
@@ -697,7 +764,8 @@ public class PlayerController : MonoBehaviour
                 _shotgunAnim.ResetTrigger("Shoot");
                 break;
             case ActiveWeapon.SMG: // SMG
-
+                yield return new WaitForSeconds(.1f);
+                _shotgunAnim.ResetTrigger("Shoot");
                 break;
             case ActiveWeapon.Rifle: // Rifle
                 yield return new WaitForSeconds(2f);
@@ -708,20 +776,25 @@ public class PlayerController : MonoBehaviour
     public void SwapToRevolver()
     {
         _shotgunAnim.SetBool("isReloading", false);
+        _TMPAnim.SetBool("isReloading", false);
         _rifleAnim.SetBool("isReloading", false);
         isReloading = false;
 
-        if (_ActiveWeapon == ActiveWeapon.Shotgun)
+        if (_ActiveWeapon == ActiveWeapon.Handgun)
+        {
+            handgunAmmo += currentAmmo;
+        }
+        else if (_ActiveWeapon == ActiveWeapon.Shotgun)
         {
             shotgunAmmo += currentAmmo;
+        }
+        else if (_ActiveWeapon == ActiveWeapon.SMG)
+        {
+            smgAmmo += currentAmmo;
         }
         else if (_ActiveWeapon == ActiveWeapon.Rifle)
         {
             rifleAmmo += currentAmmo;
-        }
-        else if ((_ActiveWeapon == ActiveWeapon.Handgun))
-        {
-            handgunAmmo += currentAmmo;
         }
 
 
@@ -740,12 +813,14 @@ public class PlayerController : MonoBehaviour
         isAiming = false;
         _Weapons[0].SetActive(true);
         _Weapons[1].SetActive(false);
+        _Weapons[2].SetActive(false);
         _Weapons[3].SetActive(false);
 
     }
     public void SwapToShotgun()
     {
         _revolverAnim.SetBool("isReloading", false);
+        _TMPAnim.SetBool("isReloading", false);
         _rifleAnim.SetBool("isReloading", false);
         isReloading = false;
         if (_ActiveWeapon == ActiveWeapon.Handgun)
@@ -755,6 +830,10 @@ public class PlayerController : MonoBehaviour
         else if (_ActiveWeapon == ActiveWeapon.Shotgun)
         {
             shotgunAmmo += currentAmmo;
+        }
+        else if (_ActiveWeapon == ActiveWeapon.SMG)
+        {
+            smgAmmo += currentAmmo;
         }
         else if (_ActiveWeapon == ActiveWeapon.Rifle)
         {
@@ -777,8 +856,56 @@ public class PlayerController : MonoBehaviour
         UIManager.Instance.UpdateShotgunAmmo(currentAmmo);
 
         isAiming = false;
-        _Weapons[1].SetActive(true);
         _Weapons[0].SetActive(false);
+        _Weapons[1].SetActive(true);
+        _Weapons[2].SetActive(false);
+        _Weapons[3].SetActive(false);
+
+
+
+    }
+    public void SwapToTMP()
+    {
+        _revolverAnim.SetBool("isReloading", false);
+        _shotgunAnim.SetBool("IsReloading", false); 
+        _rifleAnim.SetBool("isReloading", false);
+        isReloading = false;
+        if (_ActiveWeapon == ActiveWeapon.Handgun)
+        {
+            handgunAmmo += currentAmmo;
+        }
+        else if (_ActiveWeapon == ActiveWeapon.Shotgun)
+        {
+            shotgunAmmo += currentAmmo;
+        }
+        else if (_ActiveWeapon == ActiveWeapon.SMG)
+        {
+            smgAmmo += currentAmmo;
+        }
+        else if (_ActiveWeapon == ActiveWeapon.Rifle)
+        {
+            rifleAmmo += currentAmmo;
+        }
+
+
+        if (smgAmmo >= 30)
+        {
+            shotgunAmmo -= 30;
+            currentAmmo = 30;
+        }
+        else
+        {
+            currentAmmo = smgAmmo;
+            smgAmmo = 0;
+
+        }
+        _ActiveWeapon = ActiveWeapon.SMG;
+        UIManager.Instance.UpdateTMPAmmo(currentAmmo);
+
+        isAiming = false;
+        _Weapons[0].SetActive(false);
+        _Weapons[1].SetActive(false);
+        _Weapons[2].SetActive(true);
         _Weapons[3].SetActive(false);
 
 
@@ -796,6 +923,10 @@ public class PlayerController : MonoBehaviour
         else if (_ActiveWeapon == ActiveWeapon.Shotgun)
         {
             shotgunAmmo += currentAmmo;
+        }
+        else if (_ActiveWeapon == ActiveWeapon.SMG)
+        {
+            smgAmmo += currentAmmo;
         }
         else if (_ActiveWeapon == ActiveWeapon.Rifle)
         {
@@ -817,13 +948,14 @@ public class PlayerController : MonoBehaviour
         UIManager.Instance.UpdateRifleAmmo(currentAmmo);
         isAiming = false;
 
-        _Weapons[3].SetActive(true);
         _Weapons[0].SetActive(false);
         _Weapons[1].SetActive(false);
+        _Weapons[2].SetActive(false);
+        _Weapons[3].SetActive(true);
     }
     public void UpdateAmmoReserves()
     {
-        UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo, healthKits);
+        UIManager.Instance.UpdateAmmoReserves(handgunAmmo, shotgunAmmo, rifleAmmo, smgAmmo, healthKits);
     }
    
     public void UnpauseConsistency()
@@ -867,6 +999,7 @@ public class PlayerController : MonoBehaviour
     {
         _revolverAnim.SetBool("isAiming", false);
         _shotgunAnim.SetBool("isAiming", false);
+        _TMPAnim.SetBool("isAiming", false);
         _rifleAnim.SetBool("isAiming", false);
 
     }
