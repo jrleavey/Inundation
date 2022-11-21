@@ -76,6 +76,25 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject _crosshair;
 
+    // Store Stuff
+
+    public int CurrentCoins;
+
+    public Text StoreCoinCounter;
+
+    public GameObject StoreMenu;
+
+    public GameObject StoreFirstButton;
+
+    public Text CurrentHandgunAmmoStore;
+    public Text CurrentShotgunAmmoStore;
+    public Text CurrentTMPAmmoStore;
+    public Text CurrentRifleAmmoStore;
+    public Text CurrentMedkitsStore;
+
+
+
+
     private void Awake()
     {
         if (Instance == null)
@@ -91,8 +110,6 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-
-
         _deathScreen.SetActive(false);
         _pausemenu.SetActive(false);
         _startMenu.SetActive(true);
@@ -330,7 +347,8 @@ public class UIManager : MonoBehaviour
     }
     public void UpdateCoins(int coins)
     {
-        CoinsUIText.text = "" + coins;
+        CurrentCoins = coins;
+        CoinsUIText.text = "" + CurrentCoins;
     }
     public void Die()
     {
@@ -386,8 +404,7 @@ public class UIManager : MonoBehaviour
                 break;
             case 10:
                 _pickupItemText.text = "Take the TMP Ammo?";
-                break;
-                
+                break;           
         }
     }
     public void ClearPickupPrompt()
@@ -456,4 +473,89 @@ public class UIManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(_winScreenFirstButton);
     }
+
+    // Store Stuff
+    public void StorePrompt()
+    {
+        _pickupItemText.text = "Shop?";
+    }
+    public void Openstore()
+    {
+        Debug.Log("Calling StoreMenu on UIManager");
+        isTheGamePaused = true;
+        StoreCoinCounter.text = "" + CurrentCoins;
+        Time.timeScale = 0;
+        StoreMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(StoreFirstButton);
+        CurrentHandgunAmmoStore.text = _ammoAmounts[0].text;
+        CurrentShotgunAmmoStore.text = _ammoAmounts[1].text;
+        CurrentTMPAmmoStore.text = _ammoAmounts[3].text;
+        CurrentRifleAmmoStore.text = _ammoAmounts[2].text;
+        CurrentMedkitsStore.text = _ammoAmounts[4].text;
+    }
+    public void CloseStore()
+    {
+        Time.timeScale = 1;
+        StoreMenu.SetActive(false);
+        isTheGamePaused = false;
+        _pickupItemText.text = "";
+    }    
+
+    public void UpdateStoreCoins()
+    {
+        StoreCoinCounter.text = "" + CurrentCoins;
+    }
+
+    public void BuyHandgunAmmo()
+    {
+        if (CurrentCoins >= 600)
+        {
+            _player.GetComponent<PlayerController>().BoughtHandgunAmmo();
+            CurrentHandgunAmmoStore.text = _ammoAmounts[0].text;
+        }
+    }
+    public void BuyShotgunAmmo()
+    {
+        if (CurrentCoins >= 800)
+        {
+            _player.GetComponent<PlayerController>().BoughtShotgunAmmo();
+            CurrentShotgunAmmoStore.text = _ammoAmounts[1].text;
+        }
+    }
+    public void BuyRifleAmmo()
+    {
+        if (CurrentCoins >= 1200)
+        {
+            _player.GetComponent<PlayerController>().BoughtRifleAmmo();
+            CurrentRifleAmmoStore.text = _ammoAmounts[2].text;
+
+        }
+    }
+    public void BuyTMPAmmo()
+    {
+        if (CurrentCoins >= 4000)
+        {
+            _player.GetComponent<PlayerController>().BoughtTMPAmmo();
+            CurrentTMPAmmoStore.text = _ammoAmounts[3].text;
+        }
+    }
+    public void BuyTMPWeapon()
+    {
+        if (CurrentCoins >= 12000)
+        {
+            _player.GetComponent<PlayerController>().BoughtTMPWeapon();
+            
+        }
+    }
+    public void BuyHealthKit()
+    {
+        if (CurrentCoins >= 1500)
+        {
+            _player.GetComponent<PlayerController>().BoughtHealthkit();
+            CurrentMedkitsStore.text = _ammoAmounts[4].text;
+            
+        }
+    }
+
 }

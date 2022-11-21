@@ -907,9 +907,8 @@ public class PlayerController : MonoBehaviour
         _Weapons[1].SetActive(false);
         _Weapons[2].SetActive(true);
         _Weapons[3].SetActive(false);
-
-
-
+        PickedUpItem(9);
+        UIManager.Instance.CloseStore();
     }
     public void SwapToRifle()
     {
@@ -979,6 +978,14 @@ public class PlayerController : MonoBehaviour
                 UIManager.Instance.ClearPickupPrompt();
             }
         }
+        if (other.tag == "Store")
+        {
+            UIManager.Instance.StorePrompt();
+            if (aButton == true && isAiming == false)
+            {
+                UIManager.Instance.Openstore();
+            }
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -987,6 +994,13 @@ public class PlayerController : MonoBehaviour
             didIPause = true;
             UIManager.Instance.EndGame();
 
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Store")
+        {
+            UIManager.Instance.ClearPickupPrompt();
         }
     }
     public void ResetInputSystem()
@@ -1002,6 +1016,54 @@ public class PlayerController : MonoBehaviour
         _TMPAnim.SetBool("isAiming", false);
         _rifleAnim.SetBool("isAiming", false);
 
+    }
+
+    public void BoughtHandgunAmmo()
+    {
+        handgunAmmo += 10;
+        _coins -= 600;
+        UIManager.Instance.UpdateCoins(_coins);
+        UpdateAmmoReserves();
+        UIManager.Instance.UpdateStoreCoins();
+
+    }
+    public void BoughtShotgunAmmo()
+    {
+        shotgunAmmo += 5;
+        _coins -= 800;
+        UIManager.Instance.UpdateCoins(_coins);
+        UpdateAmmoReserves();
+        UIManager.Instance.UpdateStoreCoins();
+    }
+    public void BoughtTMPAmmo()
+    {
+        smgAmmo += 20;
+        _coins -= 4000;
+        UIManager.Instance.UpdateCoins(_coins);
+        UpdateAmmoReserves();
+        UIManager.Instance.UpdateStoreCoins();
+    }
+    public void BoughtRifleAmmo()
+    {
+        rifleAmmo += 4;
+        _coins -= 1200;
+        UIManager.Instance.UpdateCoins(_coins);
+        UpdateAmmoReserves();
+        UIManager.Instance.UpdateStoreCoins();
+    }
+
+    public void BoughtTMPWeapon()
+    {
+        SwapToTMP();
+        _coins -= 12000;
+    }
+    public void BoughtHealthkit()
+    {
+        healthKits++;
+        _coins -= 1500;
+        UpdateAmmoReserves();
+        UIManager.Instance.UpdateCoins(_coins);
+        UIManager.Instance.UpdateStoreCoins();
     }
 }
 

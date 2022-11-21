@@ -9,6 +9,7 @@ TagManager:
   - Throwable
   - Blood
   - End
+  - Store
   layers:
   - Default
   - TransparentFX
